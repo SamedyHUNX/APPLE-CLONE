@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mobile-ele {
+    display: none;
+}
+
+body, html {
+    height: 100vh;
+    width: 100vw;
+    font-size: 16px;
+    scrollbar-width: none;
+    overflow-y: scroll;
+    min-width: 300px;
+}
+
+/* navigation bar */
+
+.nav-sign-in {
+    background-color: white !important;
+}
+
+.nav-sign-in a i {
+    color: black !important;
+}
+
+.nav-sign-in .ul-container .nav-items .navigation-item a {
+    color: black;
+}
+
+.nav-sign-in .nav-logo a i {
+    opacity: 0.7;
+}
+
+/* sign in box */
+.sign-in-section {
+    display: flex;
+    flex-direction: column;
+    top: 6%;
+    position: relative;
+    width: 100%;
+    height: 700px;
+    align-items: center;
+    justify-content: baseline;
+}
+
+.sign-in-section .sign-in-section-top {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+    width: 1100px;
+    height: 100%;
+}
+
+.sign-in-section .sign-in-section-top .desktop-ele {
+    padding: 34px 0 0;
+    font-size: 40px;
+    font-family: "SF Pro Display Semibold", sans-serif;
+    font-weight: 550;
+}
+
+/* input section */
+.input-wrapper {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* doing */
+.h1-within-input-wrapper {
+    width: 100%;
+    text-align: center;
+    margin: 5px 130px 13px;
+    font-family: "SF Pro Display Light", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 34px 0 0;
+    opacity: 0.85;
+}
+
+.input-wrapper form {
+    height: 90%;
+    display: inline-block;
+    position: relative;
+    margin: 40px 0px 0px;
+}
+
+.input-wrapper form input {
+    width: 500px;
+    height: 66px;
+    border-radius: 12px;
+    border: 1.5px solid #494949;
+    background-color: #FFFFFFCC;
+}
+
+input[type="text"] {
+    padding: 18px 43px 18px 16px;
+    text-align: left;
+    font-family: "SF Pro Display Light", sans-serif;
+    font-size: 23px;
+    font-weight: 350;
+}
+
+.input-wrapper form button {
+    position: absolute;
+    right: 3%;
+    top: 6%;
+    font-size: 40px;
+    border: none;
+    background-color: #FFFFFFCC;
+    font-weight: 200;
+    opacity: 0.3;
+}
+
+/* remember me */
+.remember-me {
+    font-size: 19px;
+    font-family: "SF Pro Display Bold";
+    width: 100%;
+    height: 26px;
+    margin: 18px 0 16px;
+    padding: 0px 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.remember-me p {
+    padding: 1px 0px 0px 18px;
+    white-space: nowrap;
+    opacity: 0.52;
+    letter-spacing: -0.250px;
+}
+
+/* forgot password */
+.forgot-password {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30px;
+    padding: 0px 0px 12px;
+    white-space: nowrap;
+}
+
+.forgot-password a {
+    font-size: 17px;
+    letter-spacing: -0.250px;
+    font-family: "SF Pro Display Light", sans-serif;
+    text-decoration: underline;
+    color: #0066CC;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+/* dont have an id or something part */
+.final-part {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-family: "SF Pro Display Semibold";
+    color: #494949;
+    letter-spacing: -0.250px;
+    opacity: 0.85;
+    font-weight: 100;
+    white-space: nowrap;
+    padding: 0 0 48px;
+}
+
+.final-part a {
+    padding-left: 6px;
+    text-decoration: none;
+    color: #0066CC
+}
+
+/* need some help and something */
+.sign-in-section-below {
+    width: 100%;
+    height: 70px;
+    font-size: 17px;
+    font-family: "SF Pro Display Semibold", sans-serif;
+    font-weight: 400;
+    opacity: 0.85;
+    color: #1d1d1f;
+    border-top: 1.5px solid #d3d3d3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-in-section-below .below-wrapper {
+    width: 1080px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 auto;
+    padding: 21px 0px;
+}
+
+.sign-in-section-below p a {
+    color: #0066CC;
+    opacity: 1;
+    font-weight: 399;
+}
+
+/* footer of the page */
+.page-footer {
+    height: max-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 6%;
+    font-size: 12px;
+    font-family: "SF Pro Display Semibold", sans-serif;
+    padding: 0px 2.5vw;
+    font-weight: 100;
+    opacity: 0.65;
+    letter-spacing: -0.025px;
+    background-color: rgb(231, 230, 230);
+}
+
+.footer-top, .footer-bottom {
+    width: 1080px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.footer-top {
+    height: auto;
+    margin: 9.6px 0px 0px;
+    padding: 17px 0px 11px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.footer-top p {
+    height: auto;
+    text-align: justify;
+}
+
+.footer-top p a {
+    color:#1d1d1f;
+    opacity: 1;
+    font-weight: 400;
+}
+
+.footer-bottom {
+    min-height: auto;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding: 7px 0px 10px;
+}
+
+.footer-bottom #p1 {
+    padding: 0px 0px 10px;
+}
+
+.footer-bottom #p1 a {
+    color: #0066CC;
+    font-weight: 399;
+    opacity: 1;
+}
+
+.footer-bottom #p2 {
+    width: 100%;
+    height: 20px;
+    margin: 5px 0px 0px;
+    padding: 4px 0px 0px;
+}
+
+.copyright {
+    min-height: 42px;
+    max-height: 80px;
+    width: 100%;
+    height: 8vh;
+    padding: 12px 0px 0px;
+}
+
+.copyright p {
+    margin: 5px 0 0;
+}
+
+.copyright ul {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.copyright ul a {
+    padding: 0px 9px;
+    text-decoration: none;
+    color: #1d1d1f;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.copyright ul #first-a {
+    padding: 0 9px 0 0;
+}
+
+.copyright ul .mid-element {
+    border-left: 1px solid #0000008E;
+    border-right: 1px solid #0000008E;
+}
+
+/* marking the end */
