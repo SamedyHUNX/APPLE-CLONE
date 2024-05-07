@@ -522,28 +522,31 @@ ul.nav-items li:hover {
 .my-slider {
     height: 667px;
     width: 100%;
-    margin: auto;
     position: relative;
     display: grid;
     place-items: center;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .slider-figure {
-    display: flex;
-    width: calc(607px * 20);
-    height: 667px;
+    display: grid;
+    grid-template-columns: repeat(1250px, 10fr);
+    gap: 1.2rem;
+    width: fit-content;
+    /* width: calc(1250 * 20); */
+    height: 100%;
     position: absolute;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
+    overflow-x: visible;
+    /* animation: centerFrame 100s linear infinite; */
 }
 
 .image-slider {
-    min-width: 1250px;
+    width: 1250px;
     min-height: 100%;
     margin: 0 8px;
-    animation: pop 10000s linear infinite;
-}
+    transition: transform 1s;
+    animation: snapGrid 5s forwards infinite;
+} 
 
 @keyframes pop {
     0% { transform: translateX(0);}
@@ -559,12 +562,21 @@ ul.nav-items li:hover {
     100% { transform: translateX(-calc(100% * 0));}
 }
 
-@keyframes scroll {
+@keyframes snapGrid {
     0% {
-      transform: translateX(0);
+      transform: translateX(0); /* Start with no translation */
     }
     100% {
-      transform: translateX(-100%);
+      transform: translateX(-1fr); /* Translate by -4fr (1fr per grid item) */
+    }
+  }
+
+@keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-1250px);
     }
 }
   
@@ -573,7 +585,6 @@ ul.nav-items li:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    animation: pop 100s linear infinite;
 }
 
 /* nav dots */
@@ -743,27 +754,42 @@ ul.nav-items li:hover {
 }
 
 #div-1, #div-2, #div-3, #div-4, #div-5 {
-    display: grid;
+    /* display: grid; */
     height: 100%;
     width: 100%;
     font-size: 12px;
     font-family: "SF Pro Display Regular", sans-serif;
 }
 
-#div-1 span, #div-2 span, #div-3 span, #div-4 span, #div-5 span {
+.mobile-footer {
+    width: 176px;
+    height: 16px;
+    height: fit-content;
     margin: 0 20px 9.6px 0;
+}
+
+#div-1 span, #div-2 span, #div-3 span, #div-4 span, #div-5 span {
     font-weight: 570;
+}
+
+#div-1 i, #div-2 i, #div-3 i, #div-4 i, #div-5 i {
+    display: none;
 }
 
 .wrapped-div {
     display: flex;
     flex-direction: column;
+    margin-bottom: 16px;
 }
 
-.wrapped-div div {
+.wrapped-div.hide {
+    display: none;
+}
+
+/* .wrapped-div div {
     margin: 0 20px 0 0;
     height: 100%;
-}
+} */
 
 .wrapped-div div li {
     margin: 0 0 9.6px;

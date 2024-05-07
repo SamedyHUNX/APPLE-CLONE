@@ -252,6 +252,63 @@
     width: 417px;
     height: 100%;
     }
-}
 
-/* make hero photo appear in a larger screen */
+    /* footer with dropdown */
+    .footer .another-footer-container .footer-dropdown-wrapper {
+        height: fit-content;
+        grid-template-columns: repeat(1, 5fr);
+    }
+
+    .mobile-footer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .mobile-footer i {
+        height: 100%;
+        font-size: 18px;
+        font-weight: 100;
+        opacity: 0.7;
+        margin: 0 0 0 12px;
+    }
+
+    #div-1, #div-2, #div-3, #div-4, #div-5 {
+        display: grid;
+    }
+    
+    #div-1 span, #div-2 span, #div-3 span, #div-4 span, #div-5 span {
+        font-weight: 570;
+        height: 36px;
+        width: 100%;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        opacity: 0.75;
+    }
+
+    .wrapped-div div li {
+        margin: 0;
+        padding: 6px 14px;
+    }
+
+    #div-1 i, #div-2 i, #div-3 i, #div-4 i, #div-5 i {
+        display: block;
+    }
+
+    .up-arrow.hide::before {
+        display: none;
+    }
+
+    .down-arrow.hide::before {
+        display: none;
+    }
+
+    .wrapped-div.hidden {
+        display: none;
+    }
+    
+}

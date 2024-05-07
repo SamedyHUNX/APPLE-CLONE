@@ -49,6 +49,42 @@ playButton.addEventListener('click', () => {
   
 })
 
+// footer dropdown menu
+document.addEventListener('DOMContentLoaded', function () {
+  const menuItems = document.querySelectorAll('.mobile-footer span');
+  const dropDowns = document.querySelectorAll('.wrapped-div');
+
+  menuItems.forEach(item => {
+    item.addEventListener('click', function() {
+    const dropdownId = this.dataset.dropdown;
+    const dropdown = document.getElementById(dropdownId);
+
+    // isHidden
+
+    const isHidden = dropdown.classList.contains('hidden');
+
+    dropDowns.forEach(d => {
+      d.classList.add('hidden');
+    })
+
+    if (isHidden) {
+      dropdown.classList.remove('hidden');
+    } else {
+      dropdown.classList.add('hidden')
+    }
+
+    dropdown.classList.remove('hidden');
+
+    item.addEventListener('click', function() {
+      const dropdownId = this.dataset.dropdown;
+      const dropdown = document.getElementById(dropdownId);
+
+      dropdown.classList.add('hidden');
+    })
+    })
+  })
+})
+
 
 
 
