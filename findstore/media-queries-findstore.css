@@ -1,0 +1,48 @@
+@media screen and (max-width: 1030px) {
+    body, html {
+        font-size: 16px;
+    }
+
+    .header .store-search-bar {
+        width: 100%;
+        height: 11rem;
+        padding: 22px 16px 17px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .wrapper-wrapper {
+        width: 100%;
+        max-width: 38.37rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header .store-search-bar #wrapper-wrapper-1 {
+        width: 100%;
+        height: 1.69rem;
+        justify-content: center;
+        margin: 0 0 19px 14px;
+    }
+
+    .input-search-bar {
+        height: calc(1rem * 3) !important;
+        margin: 0 0 calc(1rem - 1px);
+    }
+
+    .input-search-bar input#email {
+        /* width: 100%; */
+        /* height: 2.375rem; */
+    }
+
+    .wrapper-wrapper #wrapper-wrapper-2 {
+        width: 100%;
+        height: calc(2rem - 5px) !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

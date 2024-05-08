@@ -1,0 +1,504 @@
+* {
+    box-sizing: border-box;
+}
+
+/* body */
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+}
+
+/* .navbar-find-store {
+    background-color: #FFFFFF !important;
+}
+
+.navbar-find-store a,
+.navbar-find-store .ul-container, 
+.navbar-find-store .nav-logo {
+    color: #1d1d1f !important;
+} */
+
+.store-search-bar {
+    width: 100%;
+    height: 3.5rem;
+    position: relative;
+    top: 3rem;
+    padding: 8px 0px;
+}
+
+.store-search-bar .wrapper-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 63.687rem;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.store-search-bar .wrapper-wrapper #wrapper-wrapper-1, .store-search-bar .wrapper-wrapper #wrapper-wrapper-2 {
+    width: 15.34rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.store-search-bar .wrapper-wrapper #wrapper-wrapper-1 {
+    justify-content: flex-start;
+}
+
+.store-search-bar .wrapper-wrapper #wrapper-wrapper-2 {
+    justify-content: flex-end;
+}
+
+.input-search-bar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#wrapper-wrapper-1 a {
+    text-decoration: none;
+    color: black;
+    font-size: calc(1rem + 5px);
+    font-family: "SF Pro Display Regular",sans-serif;
+    font-weight: 700;
+}
+
+.input-search-bar {
+    width: 31.81rem;
+    position: relative;
+}
+
+.input-search-bar input#email {
+    width: 27rem;
+    height: 2.375rem;
+    padding: 0 40px;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "SF Pro Display Regular", sans-serif;
+    border-radius: 1rem;
+    border-width: 1px;
+}
+
+.input-search-bar form button {
+    position: absolute;
+    right: 87%;
+    top: 33%;
+    border: none;
+    font-size: calc(1rem - 2px);
+    opacity: 0.85;
+}
+
+#wrapper-wrapper-2 {
+    height: 100%;
+    padding: 0 0 2px;
+    font-size: calc(1rem - 2px);
+}
+
+#wrapper-wrapper-2 a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+/* empty div used as margin */
+
+.empty-div {
+    width: 100%;
+    height: 2.75rem;
+    background-color: rgb(230, 230, 230);
+    position: relative;
+    top: 6%;
+}
+
+/* CAROUSEL SLIDER */
+
+.store-in-us {
+    position: relative;
+    top: 4%;
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    flex-direction: column;
+    height: 27.43rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.store-in-us #h2-holder h2 {
+    width: 100%;
+    height: 2.75rem;
+    font-size: 2.2rem;
+    letter-spacing: -0.01rem;
+    font-family: "SF Pro Display Regular", sans-serif;
+    font-weight: 800;
+    text-align: center;
+}
+
+.carousel-holder {
+    margin: -0.25rem -0.25rem 0px;
+    padding: 0.25rem 0.25rem 1.25rem;
+    width: 61.75rem;
+    height: 22.1875rem;
+    margin-top: 1.25rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: repeat(10, 18.75rem);
+    width: 193.75rem;
+    gap: 2.8rem;
+    height: 22.1875rem;
+}
+
+.content-wrapper #apple-1,
+.content-wrapper #apple-2,
+.content-wrapper #apple-3,
+.content-wrapper #apple-4,
+.content-wrapper #apple-5,
+.content-wrapper #apple-6,
+.content-wrapper #apple-7,
+.content-wrapper #apple-8,
+.content-wrapper #apple-9,
+.content-wrapper #apple-10 {
+    display: flex;
+    flex-direction: column;
+    height: 21.125rem;
+    width: 18.75rem;
+    cursor: pointer;
+}
+
+.content-wrapper #apple-1 img,
+.content-wrapper #apple-2 img,
+.content-wrapper #apple-3 img,
+.content-wrapper #apple-4 img,
+.content-wrapper #apple-5 img,
+.content-wrapper #apple-6 img,
+.content-wrapper #apple-7 img,
+.content-wrapper #apple-8 img,
+.content-wrapper #apple-9 img,
+.content-wrapper #apple-10 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-content {
+    padding: 1.375rem 1.875rem 1.25rem;
+    height: 10.14rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius: 0 0 10px 10px;
+}
+
+.card-content h2 {
+    font-family: "SF Pro Display Light", sans-serif;
+    font-size: calc(1rem + 4px);
+    color: #1d1d1f;
+    text-align: left;
+    font-weight: 590;
+    margin-bottom: 6px;
+}
+
+.card-content address, .card-content span {
+    color: #6E6E73;
+    font-size: calc(1rem - 2px);
+    height: 2.5rem;
+}
+
+.card-content span {
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+/* program section */
+
+section.program-section {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    top: 4%;
+    background-color: rgb(230, 230, 230);
+}
+
+.program-section .program-section-content {
+    width: 61.75rem;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.program-section .program-section-heading {
+    width: 100%;
+    height: 8.75rem;
+    margin: 0 0 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.program-section .program-section-heading h2, .program-section .program-section-heading p {
+    width: 55.125rem;
+    height: 2.75rem;
+    margin: 3.4375rem 0 -0.6875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "SF Pro Display Light", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 550;
+    letter-spacing: -0.095rem;
+}
+
+.program-section .program-section-heading p {
+    height: 1.5625rem;
+    margin: 1.625rem 0 1px;
+    font-size: 1.3125rem;
+    opacity: 0.65;
+}
+
+/* program section card */
+.program-section-card {
+    display: flex;
+    padding: 0 1.25rem 0 0;
+    width: fit-content;
+    height: 27.125rem;
+}
+
+.card-ads {
+    padding: 1.875rem;
+    width: 30.625rem;
+    height: 394px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 0 0 10px;
+    font-family: "SF Pro Display Light", sans-serif;
+}
+
+.card-ads h3 {
+    font-size: calc(1rem + 3px);
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.card-ads .p1 {
+    margin: 4px 0 0;
+    width: 100%;
+    font-size: 1.75rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.card-ads .p2 {
+    margin: 13.6px 0 0;
+    font-size: calc(1rem + 1px);
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    opacity: 0.85;
+}
+
+.card-ads li {
+    list-style: none;
+    width: 100%;
+    height: calc(1rem + 9px);
+    margin-top: 13px;
+}
+
+.card-ads li a {
+    color: #0066cc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.card-ads li a p {
+    height: 1rem;
+    margin-left: 5px;
+    font-size: calc(1rem - 3px);
+}
+
+.img-holder img {
+    border-radius: 0 10px 10px 0;
+}
+
+/* grid promo section */
+.grid-section-promo {
+    display: flex;
+    height: 27.125rem;
+}
+
+.grid-section-promo .card-ads {
+    border-radius: 10px 10px;
+}
+
+.grid-section-promo .card-1 {
+    width: 29.375rem;
+    margin: 0 1.25rem 0 0;
+}
+
+.grid-section-promo .card-2 {
+    width: 29.375rem;
+    margin: 0 0 0 1.25rem;
+}
+
+.grid-section-promo .p1 {
+    font-weight: 550;
+}
+
+.grid-section-promo .card-ads img {
+    width: 4.6875rem;
+    margin: 0 auto;
+}
+
+/* promo section copy */
+.program-section-card-copy-1 {
+    width: 63.75rem;
+    padding: 0;
+}
+
+.program-section-card-copy-1 .card-ads h3 {
+    text-align: center;
+}
+
+.program-section-card-copy-1 .card-ads h3 i {
+    text-align: center;
+    font-size: calc(1rem + 2px);
+}
+
+.program-section-card-copy-1 .card-ads .p1 {
+    white-space: nowrap;
+    font-weight: 500;
+}
+
+.program-section-card-copy-1 .card-ads li {
+    height: fit-content;
+    margin-top: calc(1rem - 3px);
+}
+
+.program-section-card-copy-1 .card-ads li a {
+    height: calc(1rem + (1rem / 2));
+    margin: 0 0 calc(1rem - 2px);
+}
+
+.program-section-card-copy-1 .card-ads li .a2 {
+    height: calc(1rem * 2 + 1px);
+    margin: calc(1rem / 2) 0 0;
+}
+
+.program-section-card-copy-1 .img-holder {
+    width: 30.625rem;
+    height: fit-content;
+}
+
+
+.img-holder img {
+    width: 100%;
+    object-fit:fill;
+}
+
+/* grid but copy */
+.grid-section-promo-copy-1 .card-2 img {
+    width: 18.75rem;
+}
+
+/* another copy grid 2 */
+.program-section-card-copy-2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+}
+
+.program-section-card-copy-2 .card-ads {
+    border-radius: 0 10px 10px 0;
+}
+
+.program-section-card-copy-2 .img-holder {
+    height: 29.69rem;
+}
+
+.program-section-card-copy-2 .img-holder img {
+    border-radius: 10px 0 0 10px;
+    height: 100%;
+}
+
+/* section copy 1 */
+.program-section-copy-1 {
+    height: 55.8125rem;
+}
+
+.program-section-copy-1 .program-section-heading {
+    height: 4.625rem;
+}
+
+.section-copy-1-wrapper {
+    width: 63.75rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.program-section-copy-1 .program-section-content {
+    height: 55.8125rem;
+}
+
+.program-section-card-copy-3 {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.program-section-card-copy-3, .program-section-card-copy-4 {
+    margin: calc(1rem + 4px) 0;
+    padding: 0 calc(1rem + 1.5px);
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px 10px;
+}
+
+.program-section-card-copy-3 {
+    padding: 0 calc(1rem + 1.5px) 0 0
+}
+
+.program-section-card-copy-3 .card-ads , .program-section-card-copy-4 .card-ads {
+    border-radius: 0 0 10px 10px;
+    padding: calc(1rem * 2 - 2px) calc(1rem * 3 + 2px);
+    height: 15rem;
+}
+
+.program-section-card-copy-3 .card-ads h3, .program-section-card-copy-4 .card-ads h3,
+.program-section-card-copy-3 .card-ads p, .program-section-card-copy-4 .card-ads p {
+    text-align: left;
+}
+
+.program-section-card-copy-3 .card-ads li a, .program-section-card-copy-4 .card-ads li a {
+    justify-content: left;
+}
+
+.program-section-card-copy-3 .img-holder img, .program-section-card-copy-4 .img-holder img {
+    border-radius: 10px 10px 0 0;
+}
+
+/* footer find store */
+.footer-find-store {
+    background-color: rgb(230, 230, 230);
+    position: relative;
+    top: 3.8%;
+}
+
+.footer-text-container li .empty-div {
+    height: 1rem;
+}
