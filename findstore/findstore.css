@@ -76,7 +76,7 @@ body, html {
     width: 27rem;
     height: 2.375rem;
     padding: 0 40px;
-    font-size: 17px;
+    font-size: calc(1rem + 1px);
     font-weight: 400;
     font-family: "SF Pro Display Regular", sans-serif;
     border-radius: 1rem;
@@ -315,6 +315,7 @@ section.program-section {
     width: 100%;
     height: calc(1rem + 9px);
     margin-top: 13px;
+    text-align: center;
 }
 
 .card-ads li a {
