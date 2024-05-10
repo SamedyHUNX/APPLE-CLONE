@@ -16,6 +16,7 @@ body, html {
     height: 100%;
     font-size: 16px;
     min-width: 300px;
+    max-width: 2600px;
 }
 
 header {
@@ -26,25 +27,13 @@ header {
 /* navigation bar */
 
 .navbar-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100%;
-    height: 3rem;
+    max-width: 2600px;
+    height: 2.75rem;
     background-color: #252525;
     color: #f5f5f7;
     z-index: 1000;
     position: fixed;
-}
-
-.navbar-container a {
-    padding: 0 8px;
-    text-decoration: none;
-    opacity: 0.85;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 #tv-home {
@@ -61,21 +50,32 @@ header {
     font-size: 22px;
 }
 
-div.ul-container {
+.ul-container {
     display: flex;
-    width: auto;
+    width: 60.375rem;
     height: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.ul-container .logo {
+    padding: 0 1rem;
+    text-decoration: none;
+    opacity: 0.85;
+    height: 100%;
+    text-align: center;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
-div.ul-container .nav-items {
+.ul-container .nav-items {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 40px;
+    justify-content: space-evenly;
+    gap: 2rem;
     color: #f5f5f7;
     list-style: none;
     padding: 0 8px;
@@ -85,46 +85,47 @@ div.ul-container .nav-items {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
     height: 100%;
-    opacity: 0.85;
 }
 
-div .ul-container .nav-items li a {
+.ul-container .nav-items li a {
     font-family: "SF Pro Display Light", sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 400;
     text-decoration: none;
     color: #f5f5f7;
+    opacity: 0.85;
 }
 
-ul.nav-items li:hover {
+ul.nav-items li a:hover {
     opacity: 1;
 }
 
 /* right sided logo */
 .nav-logo {
     display: flex;
-    width: auto;
+    width: 500px;
     height: 100%;
     align-items: center;
     justify-content: space-evenly;
-    text-decoration: none;
 }
 .nav-logo a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 8px;
     opacity: 0.85;
     font-size: 22px;
     cursor: pointer;
     font-family: "SF Pro Display Bold", sans-serif;
+    text-decoration: none   ;
 }
 
-.nav-logo i:hover {
+.nav-logo a i:hover {
     opacity: 1;
 }
-
-/* change later */
-/* .navbar-container {
-    display: none;
-} */
 
 /* bag logo */
 
@@ -243,7 +244,7 @@ ul.nav-items li:hover {
 /* hero image */
 .hero-section {
     position: relative;
-    height: 76vh;
+    height: 76%;
     width: 100%;
     padding-bottom: 12px;
 }
@@ -261,8 +262,9 @@ ul.nav-items li:hover {
     position: absolute;
     top: 22%;
     left: 50%;
-    width: 100%;
-    height: 18vh;
+    white-space: nowrap;
+    width: fit-content;
+    height: fit-content;
     transform: translate(-50%, -60%);
     align-items: center;
     justify-content: center;
@@ -272,10 +274,7 @@ ul.nav-items li:hover {
 }
 
 .text-over-hero-img strong {
-    display: flex;
     text-align: center;
-    align-items: center;
-    justify-content: center;
     font-family: 'SF Pro Display Regular', sans-serif;
     font-size: 56px !important;
     font-weight: 600;
@@ -298,7 +297,7 @@ ul.nav-items li:hover {
 /* button styling */
 .button-wrap {
     display: flex;
-    width: auto;
+    width: fit-content;
     height: 44px;
     align-items: center;
     justify-content: center;
@@ -312,7 +311,6 @@ ul.nav-items li:hover {
     /* display: inline-block; */
     font-family: "SF Pro Display Light", sans-serif;
     background-color: #0071E3;
-    border-style: solid;
     border-radius: 30px;
     cursor: pointer;
     margin: 0px 0px 0px 10px;
@@ -322,28 +320,26 @@ ul.nav-items li:hover {
     align-items: center;
     justify-content: center;
     white-space: nowrap;
-    border-width: 1.8px;
     font-weight: 100;
     letter-spacing: -0.224px;
     width: 100%;
     min-height: 54px;
+    border: 1.8px solid #0071E3;
 }
 
 .button-wrap .learn-more {
     width: 130px;
     height: 100%;
-    border-color: #007bff;
 }
 
 .button-wrap .buy {
     background-color: #000;
     width: 74px;
-    border-color: #007bff;
     color: #007bff;
     margin: 0 10px 0px;
 }
 
-.button-wrap .buy:hover, .buy a:hover {
+.button-wrap .buy:hover {
     background-color: #0071E3;
     color: #fff;
 }
@@ -375,7 +371,7 @@ ul.nav-items li:hover {
 }
 
 .iphone15-section .text-over-hero-img, .macbook-air-section .text-over-hero-img {
-    top: 20%;
+    top: 22%;
     color: #000;
 }
 
@@ -391,7 +387,7 @@ ul.nav-items li:hover {
     display: grid;
     position: relative;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 680px 680px 680px;
+    grid-template-rows: repeat(3, 580px);
     width: auto;
     padding: 0 12px 12px 12px;
     grid-gap: 12px;
@@ -415,14 +411,14 @@ ul.nav-items li:hover {
 .wwdc-2024 .text-over-hero-img {
     display: flex;
     position: absolute;
-    width: 100%;
-    height: 30%;
-    top: 82%;
+    width: fit-content;
+    height: max-content;
+    top: 84%;
 }
 
-.wwdc-2024 img {
+.wwdc-2024 img, .smart-watch img {
     max-width: 100%;
-    max-height: 100%;
+    object-fit: cover;
 }
 
 .wwdc-2024 .text-over-hero-img .button-wrap button {
@@ -431,47 +427,43 @@ ul.nav-items li:hover {
 }
 
 /* GRID2 : SMART WATCH */
-.smart-watch img {
-    max-width: 100%;
-    max-height: 100%;
-    background-size: contain;
-}
-
 
 .smart-watch .text-over-hero-img {
-    top: 20%;
+    top: 21%;
 }
 
 
 .smart-watch .text-over-hero-img strong {
     font-weight: 500;
     margin: 37px 23.602px 0 20.602px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
-.smart-watch .text-over-hero-img strong .ri-apple-fill {
-    width: 38px;
-    height: 38px;
-    font-size: 38px;
+.smart-watch .text-over-hero-img strong .apple-logo {
+    text-align: center;
+    font-size: 3rem;
     color: #f5f5f7;
 }
 
 .smart-watch .text-over-hero-img h6 {
     font-size: 14px;
     color: rgb(174, 10, 10);
+    margin-top: 6px;
 }
 
 /* GRID3 : APPLE VISION PRO */
 
 .apple-vision .desktop-img {
     max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .apple-vision .text-over-hero-img {
     color: #000;
-    top: 80%;
+    top: 82%;
 }
 
 .apple-vision .text-over-hero-img .button-wrap .learn-more {
@@ -488,22 +480,33 @@ ul.nav-items li:hover {
 /* GRID4 : IPAD */
 .ipad-promo img {
     max-width: 100%;
-    max-height: 100%;
+    object-fit: fill;
+}
+
+.ipad-promo .text-over-hero-img {
+    top: 18%;
+}
+
+.ipad-promo .text-over-hero-img h3 {
+    margin-top: 6px;
 }
 
 /* GRID5 : APPLE CARD */
 .card-promo img {
     max-width: 100%;
-    max-height: 100%;
 }
 
-.card-promo .text-over-hero-img strong .ri-apple-fill {
+.card-promo .text-over-hero-img strong .apple-logo {
     font-size: 38px;
     color: #000
 }
 
-.card-promo .text-over-hero-img strong i, .card-promo .text-over-hero-img {
+.card-promo .text-over-hero-img {
     color: #000;
+}
+
+.card-promo .text-over-hero-img h3 {
+    margin-top: 6px;
 }
 
 .card-promo .text-over-hero-img .button-wrap .apply-now {
@@ -523,68 +526,41 @@ ul.nav-items li:hover {
     height: 667px;
     width: 100%;
     position: relative;
-    display: grid;
-    place-items: center;
-    /* overflow: hidden; */
+    display: flex;
+    overflow: hidden;
 }
 
-.slider-figure {
+.slideshow-apple {
     display: grid;
-    grid-template-columns: repeat(1250px, 10fr);
+    grid-template-columns: repeat(10, 1250px);
+    height: 667px;
     gap: 1.2rem;
-    width: fit-content;
-    /* width: calc(1250 * 20); */
-    height: 100%;
-    position: absolute;
-    overflow-x: visible;
-    /* animation: centerFrame 100s linear infinite; */
+    overflow: hidden;
 }
 
 .image-slider {
-    width: 1250px;
-    min-height: 100%;
-    margin: 0 8px;
-    transition: transform 1s;
-    animation: snapGrid 5s forwards infinite;
-} 
-
-@keyframes pop {
-    0% { transform: translateX(0);}
-    10% { transform: translateX(-100%);}
-    20% { transform: translateX(-200%);}
-    30% { transform: translateX(-300%);}
-    40% { transform: translateX(-400%);}
-    50% { transform: translateX(-calc(100% * 5));}
-    60% { transform: translateX(-calc(100% * 4));}
-    70% { transform: translateX(-calc(100% * 3));}
-    80% { transform: translateX(-calc(100% * 2));}
-    90% { transform: translateX(-calc(100% * 1));}
-    100% { transform: translateX(-calc(100% * 0));}
+    width: 100%;
+    height: 667px;
+    animation: snap 15s linear infinite;
 }
-
-@keyframes snapGrid {
-    0% {
-      transform: translateX(0); /* Start with no translation */
-    }
-    100% {
-      transform: translateX(-1fr); /* Translate by -4fr (1fr per grid item) */
-    }
-  }
-
-@keyframes scroll {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-1250px);
-    }
-}
-  
 
 .image-slider img {
-    width: 100%;
+    min-width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.slider-figure img.active {
+    opacity: 1;
+}
+
+@keyframes snap {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }
 
 /* nav dots */
@@ -631,29 +607,24 @@ ul.nav-items li:hover {
 }
 
 .carousel-slider .carousel-figure {
-    display: flex;
-    width: calc(407px * 24);
-    height: 100%;
-    min-width: 0;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(12, 417px);
+    width: fit-content;
+    height: 236px;
+    gap: 1.2rem;
+    overflow: hidden;
 }
 
 .carousel-slider .carousel-figure .image-slider {
-    width: 417px;
-    height: 100%;
-    min-width: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    height: 236px;
+    animation: snap 10s linear infinite;
 }
 
 .carousel-slider .carousel-figure .image-slider img {
-    position: relative;
-    width: 417px;
+    min-width: 100%;
     height: 100%;
     object-fit: cover;
-    animation: pop 80s linear infinite;
 }
 
 /* pause and play to stop the carousel */

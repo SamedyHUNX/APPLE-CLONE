@@ -85,7 +85,40 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 })
 
+// slideshow
 
+const slides = document.querySelectorAll('.slider-figure.slideshow-apple img');
+let currentSlide = 0;
+let isAnimating = false;
+
+function slideShow() {
+
+};
+
+const interval = setInterval(slideShow, 10000)
+
+slides.forEach(img => {
+  img.addEventListener('transitionend', () => {
+    if (img.classList.contains('active')) {
+      img.style.opacity = 1;
+    } else {
+      img.style.opacity = 0.5;
+    }
+  })
+});
+
+
+function showSlide() {
+  if (!isAnimating) {
+    isAnimating = true;
+
+    setTimeout(() => {
+      isAnimating = false;
+    }, 3000);
+  }
+}
+
+const interval1 = setTimeout(showSlide, 1000);
 
 
 

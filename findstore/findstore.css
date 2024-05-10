@@ -1,13 +1,21 @@
 * {
-    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 /* body */
 
-body, html {
+body, html, header, footer, section {
     width: 100%;
     height: 100%;
     font-size: 16px;
+    box-sizing: border-box;
+    min-width: 300px;
+    max-width: 2600px;
+}
+
+body {
+    background-color: rgb(230, 230, 230);
 }
 
 /* .navbar-find-store {
@@ -26,6 +34,7 @@ body, html {
     position: relative;
     top: 3rem;
     padding: 8px 0px;
+    background-color: #FFFFFF;
 }
 
 .store-search-bar .wrapper-wrapper {
@@ -429,12 +438,13 @@ section.program-section {
 }
 
 .program-section-card-copy-2 .img-holder {
-    height: 29.69rem;
+    height: 24.62rem;
 }
 
 .program-section-card-copy-2 .img-holder img {
     border-radius: 10px 0 0 10px;
-    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
 }
 
 /* section copy 1 */
@@ -457,27 +467,30 @@ section.program-section {
     height: 55.8125rem;
 }
 
-.program-section-card-copy-3 {
+.program-section-card-copy-3, .program-section-card-copy-4 {
     display: flex;
     flex-direction: column-reverse;
-}
-
-.program-section-card-copy-3, .program-section-card-copy-4 {
     margin: calc(1rem + 4px) 0;
     padding: 0 calc(1rem + 1.5px);
     width: 100%;
-    height: fit-content;
+    height: 44.69rem;
     border-radius: 10px 10px;
 }
 
 .program-section-card-copy-3 {
-    padding: 0 calc(1rem + 1.5px) 0 0
+    padding: 0 calc(1rem + 1.5px) 0 0;
+}
+
+.program-section-card-copy-3 .img-holder, .program-section-card-copy-4 .img-holder {
+    width: 29.69rem;
+    height: 29.69rem;
 }
 
 .program-section-card-copy-3 .card-ads , .program-section-card-copy-4 .card-ads {
     border-radius: 0 0 10px 10px;
     padding: calc(1rem * 2 - 2px) calc(1rem * 3 + 2px);
     height: 15rem;
+    width: 29.69rem;
 }
 
 .program-section-card-copy-3 .card-ads h3, .program-section-card-copy-4 .card-ads h3,
@@ -491,13 +504,18 @@ section.program-section {
 
 .program-section-card-copy-3 .img-holder img, .program-section-card-copy-4 .img-holder img {
     border-radius: 10px 10px 0 0;
+    min-width: 100%;
+    object-fit: fill;
 }
 
 /* footer find store */
+
 .footer-find-store {
-    background-color: rgb(230, 230, 230);
     position: relative;
-    top: 3.8%;
+}
+
+.footer-find-store .another-footer-container {
+    padding: 0 !important;
 }
 
 .footer-text-container li .empty-div {

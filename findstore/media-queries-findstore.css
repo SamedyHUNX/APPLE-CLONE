@@ -1,6 +1,6 @@
 @media screen and (max-width: 1030px) {
     body, html {
-        height: 100%;
+        height: 100vh;
         font-size: 16px;
         background-color: rgb(230, 230, 230);
     }
@@ -337,14 +337,31 @@
         width: 100%;
     }
 
-
-    .program-section-card .program-section-card-copy-2 .program-section-card-copy-3 {
-        width: 100%;
+    section.program-section-card-copy-1 {
+        height: 100%;
     }
 
-    .program-section-card-copy-3 .card-ads {
+    .program-section-card-copy-3, .program-section-card-copy-4 {
+        width: 100%;
+        height: auto;
+    }
+
+    .program-section-card-copy-3 .img-holder, .program-section-card-copy-4 .img-holder {
+        width: 100%;
+        height: 100%;
+    }
+
+    .program-section-card-copy-3 .img-holder img, .program-section-card-copy-4 .img-holder img {
+        min-width: 100%;
+        height: 432px;
+        object-fit: cover;
+    }
+
+    .program-section-card-copy-3 .card-ads, .program-section-card-copy-4 .card-ads {
         padding: 30px;
         height: fit-content;
+        width: 100%;
+        max-height: 218px;
     }
 
     .program-section-card-copy-3 .card-ads h3 {
@@ -358,12 +375,5 @@
         margin: 6px 0 2px;
     }
 
-    section.program-section-card-copy-1 {
-        height: 100%;
-    }
-
     /* footer */
-    .footer-find-store {
-        top: 48%;
-    }
 }

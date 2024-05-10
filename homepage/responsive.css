@@ -1,51 +1,50 @@
-@media screen and (max-width: 1100px) {
-    div.ul-container {
-        display: none;
-    }
-
-    .navbar-container {
-        justify-content: space-between;
-    }
-}
-
 @media screen and (max-width: 930px) {
 
     body, html {
         font-size: 16px;
     }
 
-    .nav-logo {
-        justify-content: space-evenly;
-    }
+    /* navbar */
 
     .navbar-container {
         width: 100%;
+        min-width: 300px;
+    }
+
+    /* ul items */
+    .ul-container {
+        width: 100%;
         justify-content: space-between;
+    }
+
+    .nav-logo {
+        justify-content: flex-end;
+    }
+
+    .ul-container .nav-items {
+        display: none;
     }
 
     #menu-logo {
         display: flex;
     }
 
-    /* dropdown navbar for bag logo */
-
-    /* after clicking on the bag logo */
-    .bag-dropdown .hide {
-        display: none;
-    }
-
-    .navbar-container .hide {
-        display: none;
-    }
     /* ***************************************** */
 
     .bag-dropdown {
-        height: 100%;
+        position: absolute;
+        height: 100vh;
         min-width: 300px;
         top: 0;
         width: 100%;
         padding: 0;
-        z-index: 1000;
+        z-index: 10000;
+        background-color: #f5f5f7;
+    }
+
+    /* after clicking on the bag logo */
+    .bag-dropdown .hide {
+        display: none;
     }
 
     .bag-dropdown .dropdown-container {
@@ -54,7 +53,7 @@
 
     .bag-dropdown #close-logo {
         width: 100%;
-        height: 48px;
+        height: 3rem;
         display: flex;
         align-items: center;
         justify-content: right;
@@ -166,10 +165,15 @@
         top: 23%
     }
 
+    .macbook-air-section img {
+        min-height: 512.39px;
+        object-fit: cover;
+    }
+
     /* grid section */
     .grid-promo-section {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 504px);
+        grid-template-rows: repeat(6, 500px);
         width: 100%;
         height: auto;
         padding: 12px 0 0 0;
@@ -179,10 +183,9 @@
     /* apple vision */
 
     .apple-vision .mobile-img {
-        max-width: 100%;
+        min-width: 100%;
         max-height: 500px;
         object-fit: cover;
-        background-position: center;
     }
         /* wwdc 2024 */
     .wwdc-2024 {
@@ -195,63 +198,63 @@
         display: none;
     }
 
+    .smart-watch {
+        height: 500px;
+    }
+
     .hero-section .mobile-img {
-        display: inline-block;
+        display: block;
+    }
+
+    .ipad-promo img {
+        object-fit: cover;
     }
 
     /* slider images */
 
     .my-slider {
-        margin-top: 16px;
-        height: 495px;
-        width: 100%;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
+        height: 533px;
     }
 
-    .slider-figure {
-        width: calc(274px * 20);
-        height: 100%;
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
-        animation: scroll 100000s linear infinite;
+    .slideshow-apple {
+        grid-template-columns: repeat(10, 290px);
+        height: 533px;
     }
-
+    
     .image-slider {
-        min-width: 0;
-        width: 274px;
-        scroll-snap-align: start;
+        width: 100%;
+        height: 533px;
+        overflow: hidden;
     }
-
+    
     .image-slider img {
         min-width: 100%;
-        min-height: 100%;
-        object-fit: cover;
+        object-fit: contain;
     }
+    
     /* carousel */
 
     .carousel-slider {
-    margin-left: 8px;
-    margin-right: 8px;
-    height: 160px;
+        height: 160px;
     }
-
+    
     .carousel-slider .carousel-figure {
-    width: calc(238px * 12);
-    min-width: 0;
-    animation: pop 10000s linear infinite;
+        grid-template-columns: repeat(12, 238px);
+        height: 160px;
     }
-
+    
     .carousel-slider .carousel-figure .image-slider {
-    width: 238px;
-    min-width: 0;
+        width: 100%;
+        height: 160px;
+        gap: 1rem;
+        overflow: hidden;
     }
-
+    
     .carousel-slider .carousel-figure .image-slider img {
-    width: 417px;
-    height: 100%;
+        min-width: 100%;
+        object-fit: fill;
     }
+    
 
     /* footer with dropdown */
     .footer .another-footer-container .footer-dropdown-wrapper {

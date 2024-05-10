@@ -23,16 +23,20 @@ body, html {
     background-color: white !important;
 }
 
-.nav-sign-in a i {
+.nav-sign-in a i, .nav-sign-in .nav-logo a {
     color: black !important;
+    text-decoration: none;
+    opacity: 0.85;
+}
+
+.nav-sign-in a i:hover, .nav-sign-in .nav-logo a:hover,
+.nav-sign-in .ul-container .nav-items .navigation-item a:hover {
+    opacity: 1;
 }
 
 .nav-sign-in .ul-container .nav-items .navigation-item a {
     color: black;
-}
-
-.nav-sign-in .nav-logo a i {
-    opacity: 0.7;
+    opacity: 0.75;
 }
 
 /* sign in box */

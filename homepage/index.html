@@ -20,12 +20,12 @@
     <header class="header">
         <div class="navbar-container">
             <!-- navigation bar -->
-            <a href="./index.html" class="logo">
-                <i class="ri-apple-fill" alt="apple logo"></i>
-            </a>
             <div class="ul-container">
+                <a id="appple-logo" href="./index.html" class="logo">
+                    <i class="ri-apple-fill" alt="apple logo"></i>
+                </a>
                 <ul class="nav-items">
-                    <li class="navigation-item"><a href="#Store">Store</a></li>
+                    <li class="navigation-item"><a href="/findstore/findstore.html">Store</a></li>
                     <li class="navigation-item"><a href="#Mac">Mac</a></li>
                     <li class="navigation-item"><a href="iPad">iPad</a></li>
                     <li class="navigation-item"><a href="iPhone">iPhone</a></li>
@@ -37,12 +37,12 @@
                     <li class="navigation-item"><a href="Accessories">Accessories</a></li>
                     <li class="navigation-item"><a href="Support">Support</a></li>
                 </ul>
-            </div>
                 <!-- right-sided logos -->
-            <div class="nav-logo">
-                <a href="#"><i class="ri-search-line"></i></a>
-                <a href="#"><i class="bag-logo ri-shopping-bag-line"></i></a>
-                <a id="menu-logo" href="#"><i class="ri-menu-line menu-logo"></i></a>
+                <div class="nav-logo">
+                    <a href="#"><i class="ri-search-line"></i></a>
+                    <a href="#"><i class="bag-logo ri-shopping-bag-line"></i></a>
+                    <a id="menu-logo" href="#"><i class="ri-menu-line menu-logo"></i></a>
+                </div>
             </div>
         </div>
         <!-- dropdown navbar when click on bag logo -->
@@ -64,7 +64,7 @@
         </div>
          <!-- hero iphone 15 pro element and text over it -->
         <div class="hero-section">
-            <img class="desktop-img hero-img" src="./assets/images/IPhone/hero-ip15-new.jpg" alt="iphone 15 pro"/>
+            <img class="desktop-img hero-img" src="./assets/images/IPhone/hero-ip15-new.jpg" alt="iPhone 15 Pro"/>
             <img class="mobile-img hero-img" src="./assets/images/IPhone/For mobile/hero_iphone15pro__i70z9oz3hj2i_small_2x.jpg" alt="iPhone 15 Pro"/>
             <div class="text-over-hero-img">
                 <strong>iPhone 15 Pro</strong>
@@ -135,7 +135,7 @@
                 <img class="desktop-img hero-img" src="./assets/images/Promo/Watch/promo_apple_watch_series_9_order__b3u85rm9zf6u_large_2x.jpg" alt="Apple Smart Watch"/>
                 <img class="mobile-img hero-img" src="./assets/images/Promo/Watch/promo_apple_watch_series_9_order__b3u85rm9zf6u_small_2x.jpg" alt="Apple Smart Watch"/>
                 <div class="text-over-hero-img">
-                    <strong><i class="ri-apple-fill"></i>WATCH</strong>
+                    <strong><i class="apple-logo ri-apple-fill"></i>WATCH</strong>
                     <h6>SERIES 9</h6>
                     <h3>Smarter. Brighter. Mightier.</h3>
                     <div class="button-wrap">
@@ -188,19 +188,20 @@
         </div>
         <!-- image slider using html and css -->
         <div class="my-slider">
-            <div class="slider-figure">
-                <div id="slide-1" class="image-slider"><img src="./assets/images/Promo/Image Slider/Argylle/Argylle Small.jpg" alt="Argylle"></div>
-                <div id="slide-2" class="image-slider"><img src="./assets/images/Promo/Image Slider/Franklin/Franklin Small.jpg" alt="Franklin"></div>
-                <div id="slide-3" class="image-slider"><img src="./assets/images/Promo/Image Slider/Master of Air/Master of AIR SMALL.jpg" alt="Master of Air"></div>
-                <div id="slide-4" class="image-slider"><img src="./assets/images/Promo/Image Slider/Sugar/Sugar Small.jpg" alt="Sugar"></div>
-                <div id="slide-5" class="image-slider"><img src="./assets/images/Promo/Image Slider/Ted Lasso/Ted Lasso small.jpg" alt="Ted Lasso"></div>
+            <div class="slider-figure slideshow-apple">
+                <div class="image-slider"><img class="active" src="./assets/images/Promo/Image Slider/Argylle/Argylle Small.jpg" alt="Argylle"></div>
+                <div class="image-slider"><img src="./assets/images/Promo/Image Slider/Franklin/Franklin Small.jpg" alt="Franklin"></div>
+                <div class="image-slider"><img src="./assets/images/Promo/Image Slider/Master of Air/Master of AIR SMALL.jpg" alt="Master of Air"></div>
+                <div class="image-slider"><img src="./assets/images/Promo/Image Slider/Sugar/Sugar Small.jpg" alt="Sugar"></div>
+                <div class="image-slider"><img src="./assets/images/Promo/Image Slider/Ted Lasso/Ted Lasso small.jpg" alt="Ted Lasso"></div>
 
                 <!-- same slides doubled -->
-                <div id="slide-6" class="image-slider"><img src="./assets/images/Promo/Image Slider/Argylle/Argylle Small.jpg" alt="Argylle"></div>
-                <div id="slide-7" class="image-slider"><img src="./assets/images/Promo/Image Slider/Franklin/Franklin Small.jpg" alt="Franklin"></div>
-                <div id="slide-8" class="image-slider"><img src="./assets/images/Promo/Image Slider/Master of Air/Master of AIR SMALL.jpg" alt="Master of Air"></div>
-                <div id="slide-9" class="image-slider"><img src="./assets/images/Promo/Image Slider/Sugar/Sugar Small.jpg" alt="Sugar"></div>
-                <div id="slide-10" class="image-slider"><img src="./assets/images/Promo/Image Slider/Ted Lasso/Ted Lasso small.jpg" alt="Ted Lasso"></div>
+                <div class="image-slider"><img src="./assets/images/Promo/Image Slider/Argylle/Argylle Small.jpg" alt="Argylle"></div>
+                <div class="image-slider"><img src="./assets/images/Promo/Image Slider/Franklin/Franklin Small.jpg" alt="Franklin"></div>
+                <div class="image-slider"><img src="./assets/images/Promo/Image Slider/Master of Air/Master of AIR SMALL.jpg" alt="Master of Air"></div>
+                <div class="image-slider"><img src="./assets/images/Promo/Image Slider/Sugar/Sugar Small.jpg" alt="Sugar"></div>
+                <div class="image-slider"><img src="./assets/images/Promo/Image Slider/Ted Lasso/Ted Lasso small.jpg" alt="Ted Lasso"></div>
+                <div class="image-slider"><img class="active" src="./assets/images/Promo/Image Slider/Argylle/Argylle Small.jpg" alt="Argylle"></div>
             </div>
         </div>
         <!-- dot nav -->
