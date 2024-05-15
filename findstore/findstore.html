@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- find a store css -->
+    <link href="/findstore/findstore.css" rel="stylesheet">
+    <!-- homepage css -->
+    <link href="/homepage/style.css" rel="stylesheet">
+    <!-- homepage css responsiveness -->
+    <link href="/homepage/responsive.css" rel="stylesheet">
+    <!-- find a store page responsivenss -->
+    <link href="/findstore/media-queries-findstore.css" rel="stylesheet">
+    <!-- iconremix -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <!-- font -->
+    <link href="/homepage/assets/Fonts/sf-pro-display_regular,sf-pro-display_semibold,sf-pro-icons_light/fonts.css" rel="stylesheet">
+    <!-- css signin -->
+    <link href="/sign-in-page/signin.css" rel="stylesheet">
+    <!-- signin responsiveness css -->
+    <link href="/sign-in-page/sign-in-media-query.css" rel="stylesheet">
+    <!-- title -->
+    <title>Apple Store - Find a Store</title>
+</head>
+<body>
+    <header class="header">
+        <div class="navbar-container nav-sign-in .navbar-find-store">
+            <!-- navigation bar -->
+            <div class="ul-container">
+                <a id="appple-logo" href="/homepage/index.html" class="logo">
+                    <i class="ri-apple-fill" alt="apple logo"></i>
+                </a>
+                <ul class="nav-items">
+                    <li class="navigation-item"><a href="#Store">Store</a></li>
+                    <li class="navigation-item"><a href="#Mac">Mac</a></li>
+                    <li class="navigation-item"><a href="iPad">iPad</a></li>
+                    <li class="navigation-item"><a href="iPhone">iPhone</a></li>
+                    <li class="navigation-item"><a href="Watch">Watch</a></li>
+                    <li class="navigation-item"><a href="Vision">Vision</a></li>
+                    <li class="navigation-item"><a href="AirPods">AirPods</a></li>
+                    <li id="tv-home" class="navigation-item"><a href="TV&Home">TV & Home</a></li>
+                    <li class="navigation-item"><a href="Entertainment">Entertainment</a></li>
+                    <li class="navigation-item"><a href="Accessories">Accessories</a></li>
+                    <li class="navigation-item"><a href="Support">Support</a></li>
+                </ul>
+                <!-- right-sided logos -->
+                <div class="nav-logo">
+                    <a href="#"><i class="ri-search-line"></i></a>
+                    <a href="#"><i class="bag-logo ri-shopping-bag-line"></i></a>
+                    <a id="menu-logo" href="#"><i class="ri-menu-line menu-logo"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="store-search-bar">
+            <div class="wrapper-wrapper">
+                <div id="wrapper-wrapper-1">
+                    <a href="#">Find a Store</a>
+                </div>
+                <div class="input-search-bar">
+                    <form>
+                        <input type="text" id="email" name="email" placeholder="Search by location, ZIP, or store name">
+                        <button onclick="submitForm()" type="submit"><i class="ri-search-line"></i></button>
+                    </form>
+                </div>
+                <div id="wrapper-wrapper-2" class="complete-store-list">
+                    <a href="#">Complete store list ></a>
+                </div>
+            </div>
+        </div>
+        <div class="empty-div"></div>
+        <div class="store-in-us">
+            <div id="h2-holder">
+                <h2>Stores in United States</h2>
+            </div>
+            <div class="carousel-holder">
+                <div class="content-wrapper">
+                    <div id="apple-1">
+                        <img src="/homepage/assets/images/FINDSTORE PAGE/Carousel/Apple Aventura.jpg" alt="Apple Aventura">
+                        <div class="card-content">
+                            <h2>Apple Aventura</h2>
+                            <address>19501 Biscaye Boulevard<br>
+                                Aventura, FL 33180
+                            </address>
+                            <span>Opens at 10:00 a.m.</span>
+                        </div>
+                    </div>
+                    <div id="apple-2">
+                        <img src="/homepage/assets/images/FINDSTORE PAGE/Carousel/Apple Brandon.jpg" alt="Apple Brandon">
+                        <div class="card-content">
+                            <h2>Apple Brandon</h2>
+                            <address>
+                                459 Brandon Town Center Drive<br>
+                                Brandon, FL33511
+                            </address>
+                            <span>Opens at 9:00 a.m.</span>
+                        </div>
+                    </div>
+                    <div id="apple-3">
+                        <img src="/homepage/assets/images/FINDSTORE PAGE/Carousel/Apple Briarwood.jpg" alt="Apple Briarwood">
+                        <div class="card-content">
+                            <h2>Apple Briarwood</h2>
+                            <address>100 Briarwood Circle<br>
+                                Ann Arbor, Ml 48108
+                            </address>
+                            <span>Opens at 10:00 a.m.</span>
+                        </div>
+                    </div>
+                    <div id="apple-4">
+                        <img src="/homepage/assets/images/FINDSTORE PAGE/Carousel/Apple Crabtree Valley Mall.jpg" alt="Apple Crabtree Valley Mall">
+                        <div class="card-content">
+                            <h2>Apple Crabtree Valley Mall</h2>
+                            <address>
+                                4325 Glenwood Avenue<br>
+                                Raleigh, NC 27612
+                            </address>
+                            <span>Opens at 10:00 a.m.</span>
+                        </div>
+                    </div>
+                    <div id="apple-5">
+                        <img src="/homepage/assets/images/FINDSTORE PAGE/Carousel/Apple Lehig Valley.jpg" alt="Apple Lehig Valley">
+                        <div class="card-content">
+                            <h2>Apple Lehig Valley</h2>
+                            <address>
+                                250 Lehigh Valley Mall<br>
+                                Whitehall, PA 18052
+                            </address>
+                            <span>Opens at 10:00 a.m.</span>
+                        </div>
+                    </div>
+                    <div id="apple-6">
+                        <img src="/homepage/assets/images/FINDSTORE PAGE/Carousel/Apple River Park Square.jpg" alt="Apple River Park Square">
+                        <div class="card-content">
+                            <h2>Apple River Park Square</h2>
+                            <address>
+                                710 West Main Avenue<br>
+                                Spokane, WA 99201
+                            </address>
+                            <span>Open until 8:00 p.m.</span>
+                        </div>
+                    </div>
+                    <div id="apple-7">
+                        <img src="/homepage/assets/images/FINDSTORE PAGE/Carousel/Apple Southpoint.jpg" alt="Apple South Point">
+                        <div class="card-content">
+                            <h2>Apple Southpoint</h2>
+                            <address>
+                                8030 Renaissance Parkway<br>
+                                Durham, NC 27713
+                            </address>
+                            <span>Opens at 10:00 a.m.</span>
+                        </div>
+                    </div>
+                    <div id="apple-8">
+                        <img src="/homepage/assets/images/FINDSTORE PAGE/Carousel/Apple Town Square.jpg" alt="Apple Town Square">
+                        <div class="card-content">
+                            <h2>Apple Town Square</h2>
+                            <address>
+                                6671 Las Vegas Blvd South<br>
+                                Las Vegas, NV 89119
+                            </address>
+                            <span>Open until 9:00 p.m.</span>
+                        </div>
+                    </div>
+                    <div id="apple-9">
+                        <img src="/homepage/assets/images/FINDSTORE PAGE/Carousel/Apple Valley Plaza.jpg" alt="Apple Valley Plaza">
+                        <div class="card-content">
+                            <h2>Apple Valley Plaza</h2>
+                            <address>
+                                2701 Ming Avenua<br>
+                                Bakersfield, CA 93304
+                            </address>
+                            <span>Open until 8:00 p.m.</span>
+                        </div>
+                    </div>
+                    <div id="apple-10">
+                        <img src="/homepage/assets/images/FINDSTORE PAGE/Carousel/Apple Victoria Garden.jpg" alt="Apple Victoria Garden">
+                        <div class="card-content">
+                            <h2>Apple Victoria Gardens</h2>
+                            <address>
+                                12461 South Main Street<br>
+                                Rancho Cucamonga, CA 91739
+                            </address>
+                            <span>Open until 8:00 p.m.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="program-section">
+            <div class="program-section-content">
+                <div class="program-section-heading">
+                    <h2>Come see the best of Apple at our stores.</h2>
+                    <p>Shop our products and get expert advice in person.</p>
+                </div>
+                <!-- card section -->
+                <div class="program-section-card">
+                    <div class="card-ads">
+                        <h3>Only at Apple</h3>
+                        <p class="p1">Experience Apple Vision Pro.</p>
+                        <p class="p2">Sign up for a demo at an Apple Store near you.</p>
+                        <li>
+                            <a href="#">Book a demo <p>></p></a>
+                        </li>
+                    </div>
+                    <div class="img-holder">
+                        <img src="/homepage/assets/images/FINDSTORE PAGE/CARD/Desktop/Apple Vision Pro ads.png" alt="Apple Vision Pro ads">
+                    </div>
+                </div>
+                <div class="grid-section-promo">
+                    <div class="card-1 card-ads">
+                        <img src="/homepage/assets/images/FINDSTORE PAGE/Grid/CarrierDeal.png" alt="Emoji">
+                        <p class="p1">iPhone carrier deals.<br>
+                        For as low as $0 with trade-<br>
+                        in and carrier credits.</p>
+                        <li>
+                            <a href="#">See all carrier deals at Apple <p>></p></a>
+                        </li>
+                    </div>
+                    <div class="card-2 card-ads">
+                        <img src="/homepage/assets/images/FINDSTORE PAGE/Grid/Find Apple.png" alt="Find Apple Icon">
+                        <p class="p1">Get it today. Buy online and <br>
+                        we'll have it ready for pickup.</p>
+                    </div>
+                </div>
+                <!-- another promo -->
+                <div class="program-section-card program-section-card-copy-1">
+                    <div class="card-ads">
+                        <h3><i class="ri-apple-fill"></i>Trade In</h3>
+                        <p class="p1">Bring in an eligible device and we'll<br>
+                        trade it for instant credit.</p>
+                        <li>
+                            <a href="#">See what your device is worth <p>></p></a>
+                            <a class="a2" href="#">How to prepare your device for trade-in</a>
+                        </li>
+                    </div>
+                    <div class="img-holder">
+                        <img src="/homepage/assets/images/FINDSTORE PAGE/CARD/Mobile/store-small.jpg" alt="Apple Store">
+                    </div>
+                </div>
+                <!-- another grid promo but copy 1 -->
+                <div class="grid-section-promo grid-section-promo-copy-1">
+                    <div class="card-1 card-ads">
+                        <img src="/homepage/assets/images/FINDSTORE PAGE/CARD/Desktop/Dollar icon.png" alt="Dollar Icon">
+                        <p class="p1">Pay monthly at 0% APR<br>
+                        when you choose to check<br>
+                        out with Apple Card Monthly<br>
+                        Installments.</p>
+                        <li>
+                            <a href="#">See financing and credit options <p>></p></a>
+                        </li>
+                    </div>
+                    <div class="card-2 card-ads carrier-logo">
+                        <img src="/homepage/assets/images/FINDSTORE PAGE/Grid/CARRIER.png" alt="Carrier">
+                        <p class="p1">We'll help you find a carrier<br>
+                        plan and activate your new<br>
+                        iPhone in person.</p>
+                    </div>
+                </div>
+                <!-- promo section but copy 1 -->
+                <div class="program-section-heading program-section-heading-copy-1">
+                    <h2>We'll help you get started. And keep going.</h2>
+                    <p>Every store has dedicated teams for support, learning, and more.</p>
+                </div>
+                <!-- card section -->
+                <div class="program-section-card program-section-card-copy-1">
+                    <div class="card-ads">
+                        <h3>Genius Bar</h3>
+                        <p class="p1">Get expert service and support at<br>
+                        the Genius Bar.</p>
+                        <li>
+                            <a href="#">Get help here<p>></p></a>
+                            <a href="#">How to prepare your device for your appointment</a>
+                        </li>
+                    </div>
+                    <div class="img-holder">
+                        <img src="/homepage/assets/images/FINDSTORE PAGE/Grid/mask-small.jpg" alt="Apple Store ads">
+                    </div>
+                </div>
+                <!-- another grid promo but copy 2 -->
+                <div class="program-section-card program-section-card-copy-1 program-section-card-copy-2">
+                    <div class="card-ads">
+                        <h3>Apple at Work</h3>
+                        <p class="p1">Put our Small Business Team on<br>
+                        your team.</p>
+                        <li>
+                            <a href="#">See how we can help<p>></p></a>
+                        </li>
+                    </div>
+                    <div class="img-holder">
+                        <img src="/homepage/assets/images/FINDSTORE PAGE/Grid/STUDY.png" alt="Apple Store">
+                    </div>
+                </div>
+            </div>
+             <!-- another sectiobn but copy 1 -->
+            <section class="program-section program-section-copy-1">
+                <div class="program-section-content">
+                    <div class="program-section-heading">
+                        <h2>What's happening at Apple.</h2>
+                    </div>
+                    <div class="section-copy-1-wrapper">
+                        <div class="program-section-card program-section-card-copy-2 program-section-card-copy-3">
+                            <div class="card-ads">
+                                <h3>Today at Apple</h3>
+                                <p class="p1">Join free sessions at the
+                                Apple Store and go further
+                                with the products you love.</p>
+                            <li>
+                                <a href="#">See how we can help<p>></p></a>
+                            </li>
+                            </div>
+                            <div class="img-holder">
+                                <img src="/homepage/assets/images/FINDSTORE PAGE/Grid/Korean.jpg" alt="Apple Store">
+                            </div>
+                        </div>
+                        <div class="program-section-card program-section-card-copy-2 program-section-card-copy-3 program-section-card-copy-4">
+                            <div class="card-ads">
+                                <h3>News</h3>
+                                <p class="p1">We're going carbon neutral<br>
+                                across our entire business by<br>
+                                2030</p>
+                                <li>
+                                    <a href="#">Learn more<p>></p></a>
+                                </li>
+                            </div>
+                            <div class="img-holder">
+                                <img src="/homepage/assets/images/FINDSTORE PAGE/Grid/CARBON NEUTRAL.jpg" alt="Carbon Neutral">
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="footer footer-find-store">
+                        <div class="another-footer-container">
+                            <div class="footer-text-wrapper">
+                                <ul class="footer-text-container">
+                                    <li>We use your IP address or browser to approximate your location. This information is discarded at the end of your session or in accordance with your browser settings.<br>
+                                        <div class="empty-div"></div>
+                                        † AT&T iPhone 15 Special Deal: Monthly price reflects net monthly payment, after application of AT&T trade-in credit applied over 36 months with purchase of an iPhone 15 Pro, iPhone 15 Pro Max, iPhone 15, or iPhone 15 Plus and trade-in of eligible smartphone.
+                                         Receive credit with purchase of an iPhone 15 Pro or iPhone 15 Pro Max of either $1000, $700, or $350 (based upon the model and condition of your trade-in smartphone). Receive credit with purchase of an iPhone 15 or iPhone 15 Plus of either $700 or $350 (based upon the model and condition of your trade-in smartphone). Max bill credits will not exceed the cost of the device.
+                                         Requires upgrade of an existing line or activation of a new line and purchase of a new iPhone 15 Pro, iPhone 15 Pro Max, iPhone 15, or iPhone 15 Plus on qualifying 36 month 0% APR installment plan, subject to carrier credit qualification. AT&T Installment Plan with Next Up is not eligible for this promotion.
+                                         $0 down for well qualified customers only, or down payment may be required and depends on a variety of factors. Tax on full retail price due at sale. Requires activation on eligible unlimited plan. If you cancel eligible wireless service, credits will stop and you will owe the remaining device balance. Activation/Upgrade Fee: $35. Trade in device may not be on existing installment plan.
+                                         Bill credits are applied as a monthly credit over the 36 month installment plan. Credits start within 3 bills. Will receive catchup credits once credits start. Wireless line must be on an installment agreement, active, and in good standing for 30 days to qualify. Installment agreement starts when device is shipped. To get all credits, device must remain on agreement for entire term and you must keep eligible service on device for entire installment term.
+                                         Limited time offer; subject to change. Limits: one trade-in per qualifying purchase and one credit per line. May not be combinable with other offers, discounts, or credits. Purchase, financing, other limits, and restrictions apply. Price for iPhone 15 and iPhone 15 Plus includes $30 AT&T connectivity discount. Activation required.<br>
+                                         <div class="empty-div"></div>
+                                         Verizon iPhone 15 Special Deal: Monthly price reflects net monthly payment, after application of Verizon trade-in credit applied over 36 months with purchase of an iPhone 15 Pro, iPhone 15 Pro Max, iPhone 15, or iPhone 15 Plus. Receive credit with purchase of an iPhone 15, iPhone 15 Plus, iPhone 15 Pro, or iPhone 15 Pro Max of $830 or $415 for customers on an Unlimited Ultimate, One Unlimited, or 5G Get More plan (based upon the model and condition of your trade-in smartphone); or $415 or $200 for customers on an Unlimited Plus, 5G Do More, or 5G Play More plan (based upon the model and condition of your trade-in smartphone). Max bill credits will not exceed the cost of the device. Must be an existing Verizon customer. Credit comprised of (i) Apple instant trade-in credit at checkout and (ii) Verizon monthly bill credits applied over 36 months. Customer must remain in the Verizon Device Payment Program for 36 months to receive the full benefit of the Verizon bill credits. Bill credits may take 1-2 bill cycles to appear. If it takes two cycles for bill credits to appear, you'll see the credit for the first cycle on your second bill in addition to that month's credit. Requires purchase and activation of a new iPhone 15 Pro, iPhone 15 Pro Max, iPhone 15, or iPhone 15 Plus with the Verizon Device Payment Program at 0% APR for 36 months, subject to carrier credit qualification, and iPhone availability and limits. Taxes and shipping not included in monthly price. Sales tax may be assessed on full value of new iPhone. Requires eligible unlimited service plan. Requires trade-in of eligible device in eligible condition. Must be at least 18 to trade-in. Apple or its trade-in partners reserve the right to refuse or limit any trade-in transaction for any reason. In-store trade-in requires presentation of a valid, government-issued photo ID (local law may require saving this information). In-store promotion availability subject to local law; speak to a Specialist to learn more. Limited-time offer; subject to change. Additional terms from Apple, Verizon, and Apple's trade-in partners may apply. Price for iPhone 15 and iPhone 15 Plus includes $30 Verizon connectivity discount. Activation required.<br>
+                                         <div class="empty-div"></div>
+                                         AT&T iPhone 14 Special Deal: Buy an iPhone 14 128 GB and get $514.36 in bill credits applied over 36 months. Buy an iPhone 14 256 GB and get $434.36 in bill credits applied over 36 months. Buy an iPhone 14 512 GB and get $454.36 in bill credits applied over 36 months. Requires upgrade of an existing line (or activation of a new line) and purchase on qualifying 36-month 0% APR installment plan, subject to carrier credit qualification. $0 down for well-qualified customers only, or down payment may be required and depends on a variety of factors. Tax on full retail price due at sale. If you cancel eligible wireless service, credits will stop and you will owe the remaining device balance. Activation/Upgrade Fee: $35. Bill credits are applied as a monthly credit over the 36-month installment plan. Credits start within 3 bills. Will receive catch-up credits once credits start. Wireless line must be on an installment agreement, active, and in good standing for 30 days to qualify. Installment agreement starts when device is shipped. To get all credits, device must remain on agreement for entire term and you must keep eligible service on device for entire installment term. Limited-time offer; subject to change. Limits: one credit per line. May not be combinable with other offers, discounts, or credits. Purchase, financing, other limits, and restrictions apply. Activation required.<br>
+                                         <div class="empty-div"></div>
+                                         T-Mobile iPhone 14 Special Deal: Monthly price reflects net monthly payment, after application of T-Mobile trade-in credit applied over 24 months with purchase of an iPhone 14 or iPhone 14 Plus and trade-in of eligible smartphone. Receive credit with purchase of an iPhone 14 or iPhone 14 Plus of $800 or $400 on a Go5G Plus plan (based upon the model and condition of your trade-in smartphone); or $300 or $150 for customers on a Go5G, TMO ONE, TMO ONE Plus, Magenta, Magenta MAX, or Magenta Plus plan (based upon the model and condition of your trade-in smartphone). Max bill credits will not exceed the cost of the device. Credit comprised of (i) Apple connectivity trade-in credit at checkout and (ii) T-Mobile monthly bill credits applied over 24 months. Allow 2 bill cycles from valid submission and validation of trade in. Tax on pre-credit price due at sale. Limited-time offer; subject to change. Qualifying credit, data plan, and trade-in in good condition required. Max 4 promotional offers on any iPhone per account. May not be combinable with some offers or discounts. Price for iPhone 14 and iPhone 14 Plus includes $30 T-Mobile connectivity discount. Activation required. Contact T-Mobile before cancelling service to continue remaining bill credits on current device, or credits stop & balance on required finance agreement is due.<br>
+                                         <div class="empty-div"></div>
+                                         AT&T iPhone SE 3 Special Deal: Buy an iPhone SE 64 GB and get $358.36 in bill credits applied over 36 months. Buy an iPhone SE 128 GB and get $264.36 in bill credits applied over 36 months. Buy an iPhone SE 256 GB and get $184.36 in bill credits applied over 36 months. Requires upgrade of an existing line (or activation of a new line) and purchase on qualifying 36-month 0% APR installment plan, subject to carrier credit qualification. $0 down for well-qualified customers only, or down payment may be required and depends on a variety of factors. Tax on full retail price due at sale. If you cancel eligible wireless service, credits will stop and you will owe the remaining device balance. Activation/Upgrade Fee: $35. Bill credits are applied as a monthly credit over the 36-month installment plan. Credits start within 3 bills. Will receive catch-up credits once credits start. Wireless line must be on an installment agreement, active, and in good standing for 30 days to qualify. Installment agreement starts when device is shipped. To get all credits, device must remain on agreement for entire term and you must keep eligible service on device for entire installment term. Limited-time offer; subject to change. Limits: one credit per line. May not be combinable with other offers, discounts, or credits. Purchase, financing, other limits, and restrictions apply. Activation required.<br>
+                                         <div class="empty-div"></div>
+                                         T-Mobile iPhone SE Special Deal: Monthly price reflects net monthly payment, after application of T-Mobile trade-in credit applied over 24 months with purchase of an iPhone SE 3 and trade-in of eligible smartphone. Receive credit with purchase of an iPhone SE 3 of $579 or $400 on a Go5G Plus plan (based upon the model and condition of your trade-in smartphone); or $300 or $150 for customers on a Go5G, TMO ONE, TMO ONE Plus, Magenta, Magenta MAX, or Magenta Plus plan (based upon the model and condition of your trade-in smartphone). Max bill credits will not exceed the cost of the device. Credit comprised of (i) Apple connectivity trade-in credit at checkout and (ii) T-Mobile monthly bill credits applied over 24 months. Allow 2 bill cycles from valid submission and validation of trade in. Tax on pre-credit price due at sale. Limited-time offer; subject to change. Qualifying credit, data plan, and trade-in in good condition required. Max 4 promotional offers on any iPhone per account. May not be combinable with some offers or discounts. Activation required. Contact T-Mobile before cancelling service to continue remaining bill credits on current device, or credits stop & balance on required finance agreement is due.<br>
+                                         <div class="empty-div"></div>
+                                         1. Trade-in values will vary based on the condition, year, and configuration of your eligible trade-in device. Not all devices are eligible for credit. You must be at least 18 years old to be eligible to trade in for credit or for an Apple Gift Card. Trade-in value may be applied toward qualifying new device purchase, or added to an Apple Gift Card. Actual value awarded is based on receipt of a qualifying device matching the description provided when estimate was made. Sales tax may be assessed on full value of a new device purchase. In-store trade-in requires presentation of a valid photo ID (local law may require saving this information). Offer may not be available in all stores, and may vary between in-store and online trade-in. Some stores may have additional requirements. Apple or its trade-in partners reserve the right to refuse or limit quantity of any trade-in transaction for any reason. More details are available from Apple’s trade-in partner for trade-in and recycling of eligible devices. Restrictions and limitations may apply.<br>
+                                         <div class="empty-div"></div> 
+                                    </li>
+                                    <li>
+                                        2. Apple Card Monthly Installments (ACMI) is a 0% APR payment option that is only available if you select it at checkout in the U.S. for eligible products purchased at Apple Store locations, <a href="apple.com">apple.com</a>, the Apple Store app, or by calling 1-800-MY-APPLE, and is subject to credit approval and credit limit. 
+                                        <a href="https://support.apple.com/kb/HT211204">See https://support.apple.com/kb/HT211204</a> for more information about eligible products. APR ranges may vary based on when you accepted an Apple Card. 
+                                        Cardholders who accept an Apple Card on and/or after February 1, 2024: Variable APRS for Apple Card, other than ACMI, range from 19.24% to 29.49% based on creditworthiness. Rates as of February 1, 2024. Existing cardholders: See your Customer Agreement for applicable rates and fee.
+                                         If you buy an ACMI eligible product by choosing to pay in full with Apple Card (instead of using ACMI), that purchase is subject to the Apple Card variable APR, not 0% APR. Taxes and shipping on ACMI purchases are subject to the variable APR, not 0% APR. When you buy an iPhone with ACMI, you’ll need to select AT&T, T-Mobile, or Verizon as your carrier when you check out. An iPhone purchased with ACMI is always unlocked, so you can switch carriers at any time. ACMI is not available for purchases made online at the following special stores: Apple Employee Purchase Plan; participating corporate Employee Purchase Programs; Apple at Work for small businesses; Government, and Veterans and Military Purchase Programs, or on refurbished devices. The last month’s payment for each product will be the product's purchase price, less all other payments at the monthly payment amount. ACMI financing is subject to change at any time for any reason, including but not limited to, installment term lengths and eligible products. See <a href="https://support.apple.com/kb/HT211204">https://support.apple.com/kb/HT211204</a> for information about upcoming changes to ACMI financing. See the <a href="#">Apple Card Customer Agreement</a> for more information about ACMI financing.
+                                    </li>
+                                    <li>
+                                        To access and use all Apple Card features and products available only to Apple Card users, you must add Apple Card to Wallet on an iPhone or iPad that supports and has the latest version of iOS or iPadOS. 
+                                        Apple Card is subject to credit approval, available only for qualifying applicants in the United States, and issued by Goldman Sachs Bank USA, Salt Lake City Branch.
+                                    </li>
+                                    <li>
+                                        If you reside in the U.S. territories, please call Goldman Sachs at 877-255-5923 with questions about Apple Card.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-dropdown-wrapper">
+                                <div id="div-1">
+                                    <div class="mobile-footer">
+                                        <span data-dropdown="dropdown1">Shop and Learn</span>
+                                        <i class="up-arrow ri-arrow-up-s-line hide"></i>
+                                        <i class="down-arrow ri-arrow-down-s-line"></i>
+                                    </div>
+                                    <div class="wrapped-div hidden" id="dropdown1">
+                                        <div>
+                                            <li><a href="#">Store</a></li>
+                                            <li><a href="#">Mac</a></li>
+                                            <li><a href="#">iPad</a></li>
+                                            <li><a href="#">iPhone</a></li>
+                                            <li><a href="#">Watch</a></li>
+                                            <li><a href="#">Vision</a></li>
+                                            <li><a href="#">AirPods</a></li>
+                                            <li><a href="#">TV & Home</a></li>
+                                            <li><a href="#">AirTag</a></li>
+                                            <li><a href="#">Accessories</a></li>
+                                            <li><a href="#">Gift Cards</a></li>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-footer">
+                                        <span data-dropdown="dropdown2">Apple Wallet</span>
+                                        <i class="up-arrow ri-arrow-up-s-line hide"></i>
+                                        <i class="down-arrow ri-arrow-down-s-line"></i>
+                                    </div>
+                                    <div class="wrapped-div hidden" id="dropdown2">
+                                        <div>
+                                            <li><a href="#">Wallet</a></li>
+                                            <li><a href="#">Apple Card</a></li>
+                                            <li><a href="#">Apple Pay</a></li>
+                                            <li><a href="#">Apple Cash</a></li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="div-2">
+                                    <div class="mobile-footer">
+                                        <span data-dropdown="dropdown3">Account</span>
+                                        <i class="up-arrow ri-arrow-up-s-line hide"></i>
+                                        <i class="down-arrow ri-arrow-down-s-line"></i>
+                                    </div>
+                                    <div class="wrapped-div hidden" id="dropdown3">
+                                        <div>
+                                            <li><a href="#">Manage Your Apple ID</a></li>
+                                            <li><a href="#">Apple Store Account</a></li>
+                                            <li><a href="#">iCloud.com</a></li>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-footer">
+                                        <span data-dropdown="dropdown4">Entertainment</span>
+                                        <i class="up-arrow ri-arrow-up-s-line hide"></i>
+                                        <i class="down-arrow ri-arrow-down-s-line"></i>
+                                    </div>
+                                        <div class="wrapped-div hidden" id="dropdown4">
+                                        <div>
+                                            <li><a href="#">Apple One</a></li>
+                                            <li><a href="#">Apple TV+</a></li>
+                                            <li><a href="#">Apple Music</a></li>
+                                            <li><a href="#">Apple Arcade</a></li>
+                                            <li><a href="#">Apple Fitness+</a></li>
+                                            <li><a href="#">Apple News+</a></li>
+                                            <li><a href="#">Apple Podcasts</a></li>
+                                            <li><a href="#">Apple Books</a></li>
+                                            <li><a href="#">Apple Store</a></li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="div-3">
+                                    <div class="mobile-footer">
+                                        <span data-dropdown="dropdown5">Apple Store</span>
+                                        <i class="up-arrow ri-arrow-up-s-line hide"></i>
+                                        <i class="down-arrow ri-arrow-down-s-line"></i>
+                                    </div>
+                                    <div class="wrapped-div hidden" id="dropdown5">
+                                        <div>
+                                            <li><a href="#">Find a Store</a></li>
+                                            <li><a href="#">Genius Bar</a></li>
+                                            <li><a href="#">Today at Apple</a></li>
+                                            <li><a href="#">Group Reservations</a></li>
+                                            <li><a href="#">Apple Camp</a></li>
+                                            <li><a href="#">Apple Store App</a></li>
+                                            <li><a href="#">Certified Refurbished</a></li>
+                                            <li><a href="#">Apple Trade in</a></li>
+                                            <li><a href="#">Financing</a></li>
+                                            <li><a href="#">Carrier Deals at Apple</a></li>
+                                            <li><a href="#">Order Status</a></li>
+                                            <li><a href="#">Shopping Help</a></li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="div-4">
+                                    <div class="mobile-footer">
+                                        <span data-dropdown="dropdown6">For Business</span>
+                                        <i class="up-arrow ri-arrow-up-s-line hide"></i>
+                                        <i class="down-arrow ri-arrow-down-s-line"></i>
+                                    </div>
+                                    <div class="wrapped-div hidden" id="dropdown6">
+                                        <div>
+                                            <li><a href="#">Apple and Business</a></li>
+                                            <li><a href="#">Apple Store Account</a></li>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-footer">
+                                        <span data-dropdown="dropdown7">For Education</span>
+                                        <i class="up-arrow ri-arrow-up-s-line hide"></i>
+                                        <i class="down-arrow ri-arrow-down-s-line"></i>
+                                    </div>
+                                    <div class="wrapped-div hidden" id="dropdown7">
+                                        <div>
+                                            <li><a href="#">Apple and Education</a></li>
+                                            <li><a href="#">Shop for K-12</a></li>
+                                            <li><a href="#">Shop for College</a></li>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-footer">
+                                        <span data-dropdown="dropdown8">For Healthcare</span>
+                                        <i class="up-arrow ri-arrow-up-s-line hide"></i>
+                                        <i class="down-arrow ri-arrow-down-s-line"></i>
+                                    </div>
+                                    <div class="wrapped-div hidden" id="dropdown8">
+                                        <div>
+                                            <li><a href="#">Apple in Healthcare</a></li>
+                                            <li><a href="#">Health on Apple Watch</a></li>
+                                            <li><a href="#">Health Records on iPhone</a></li>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-footer">
+                                        <span data-dropdown="dropdown8">For Government</span>
+                                        <i class="up-arrow ri-arrow-up-s-line hide"></i>
+                                        <i class="down-arrow ri-arrow-down-s-line"></i>
+                                    </div>
+                                    <div class="wrapped-div hidden" id="dropdown8">
+                                        <div>
+                                            <li><a href="#">Shop for Government</a></li>
+                                            <li><a href="#">Shop for Veterans and Military</a></li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="div-5">
+                                    <div class="mobile-footer">
+                                        <span data-dropdown="dropdown9">Apple Values</span>
+                                        <i class="up-arrow ri-arrow-up-s-line hide"></i>
+                                        <i class="down-arrow ri-arrow-down-s-line"></i>
+                                    </div>
+                                    <div class="wrapped-div hidden" id="dropdown9">
+                                        <div>
+                                            <li><a href="#">Accessibility</a></li>
+                                            <li><a href="#">Education</a></li>
+                                            <li><a href="#">Environment</a></li>
+                                            <li><a href="#">Inclusion and Diversity</a></li>
+                                            <li><a href="#">Privacy</a></li>
+                                            <li><a href="#">Racial Equity and Justice</a></li>
+                                            <li><a href="#">Supply Chain</a></li>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-footer">
+                                        <span data-dropdown="dropdown10">About Apple</span>
+                                        <i class="up-arrow ri-arrow-up-s-line hide"></i>
+                                        <i class="down-arrow ri-arrow-down-s-line"></i>
+                                    </div>
+                                    <div class="wrapped-div hidden" id="dropdown10">
+                                        <div>
+                                            <li><a href="#">Newsroom</a></li>
+                                            <li><a href="#">Apple Leadership</a></li>
+                                            <li><a href="#">Career Opportunities</a></li>
+                                            <li><a href="#">Investors</a></li>
+                                            <li><a href="#">Ethic & Compliance</a></li>
+                                            <li><a href="#">Events</a></li>
+                                            <li><a href="#">Contact Apple</a></li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gf-footer">
+                                <div id="first-div">
+                                    <p>More ways to shop: <a href="#">Find an Apple Store</a> or <a href="#">other retailer</a> near you.
+                                    Or call 1-800-MY-APPLE.</p>
+                                </div>
+                                <div id="second-div">
+                                    <p>
+                                        Copyright <i class="ri-copyright-line"></i> 2024 Apple Inc. All rights reserved.
+                                    </p>
+                                    <ul>
+                                        <a id="first-a" href="#">Privacy Policy</a>
+                                        <a class="mid-element" href="#">Terms of Use</a>
+                                        <a class="mid-element" href="#">Sales and Refunds</a>
+                                        <a class="mid-element" href="#">Legal</a>
+                                        <a id="last-a" href="#">Site Map</a>
+                                    </ul>
+                                    <p>
+                                        United States
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </section>
+        </section>
+    </header>
+    <script src="/findstore/findstore.js"></script>
+    <script src="/homepage/script.js"></script>
+</body>
+</html>

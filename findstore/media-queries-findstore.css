@@ -1,0 +1,379 @@
+@media screen and (max-width: 1030px) {
+    body, html {
+        height: 100vh;
+        font-size: 16px;
+        background-color: rgb(230, 230, 230);
+    }
+
+    .store-search-bar {
+        width: 100%;
+        height: 11rem;
+        padding: 22px 16px 17px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .wrapper-wrapper {
+        width: 100%;
+        max-width: 38.37rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header .store-search-bar #wrapper-wrapper-1 {
+        width: 100%;
+        height: 1.69rem;
+        justify-content: center;
+        margin: 0 0 19px 0;
+        font-weight: 800;
+    }
+
+    .input-search-bar {
+        height: 3rem;
+        margin: 0 0 calc(1rem - 1px);
+        width: 100%;
+    }
+
+    .input-search-bar input#email {
+        width: 90vw;
+        min-width: 18rem;
+        max-width: 20.9rem;
+        height: 3rem;
+    }
+
+    .input-search-bar form button {
+        display: none;
+        top: 35%;
+        right: 80%;
+        font-size: calc(1rem + 1px);
+        opacity: 0.6;
+    }
+
+    .store-search-bar .wrapper-wrapper #wrapper-wrapper-2 {
+        width: 100%;
+        height: calc(2rem - 5px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 0 2px;
+        font-size: calc(1rem + 1px);
+    }
+
+    .empty-div {
+        width: 100%;
+        height: calc(1.5rem + 2px);
+    }
+
+    /* body section - store section */
+    .store-in-us {
+        display: flex;
+        flex-direction: column;
+        height: 27.43rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .store-in-us {
+        top: 5%;
+    }
+
+    .store-in-us #h2-holder {
+        width: 100%;
+        height: 2rem;
+    }
+
+    .store-in-us #h2-holder h2 {
+        font-size: 1.75rem;
+        height: 100%;
+        text-align: center;
+        font-weight: 900;
+    }
+
+    /* carousel card */
+    .carousel-holder {
+        margin: 20px -4px 0;
+        padding: 4px 4px 20px;
+        width: 100%;
+        height: 23.31rem;
+    }
+
+    .content-wrapper {
+        grid-template-columns: repeat(10, 20.94rem);
+        position: relative;
+        left: 3%;
+        gap: 10px;
+    }
+
+    .content-wrapper #apple-1,
+    .content-wrapper #apple-2,
+    .content-wrapper #apple-3,
+    .content-wrapper #apple-4,
+    .content-wrapper #apple-5,
+    .content-wrapper #apple-6,
+    .content-wrapper #apple-7,
+    .content-wrapper #apple-8,
+    .content-wrapper #apple-9,
+    .content-wrapper #apple-10 {
+        height: 21.875rem;
+        width: 100%;
+    }
+
+    .program-section .program-section-content {
+        width: 87.5%;
+        margin: 0 auto;
+    }
+
+    .program-section .program-section-heading {
+        height: 9.56rem;
+        margin: 0 0 40px;
+        padding: 40px 0 0 0;
+    }
+
+    .program-section .program-section-heading h2, .program-section .program-section-heading p {
+        width: fit-content;
+        height: fit-content;
+        margin: 1.5rem 0 8px;
+        font-size: 2rem;
+        letter-spacing: -0.1rem;
+        text-align: center;
+    }
+
+    .program-section .program-section-heading p {
+        margin: 11px 0 15px;
+        font-size: 1.3125rem;
+        opacity: 0.65;
+        font-size: 19px;
+        font-family: "SF Pro Display Regular", sans-serif;
+    }
+
+    /* promo card sections */
+    .program-section-card {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        width: 100%;
+        margin: 0 0 20px;
+        padding: 0;
+        height: 45.2%;
+    }
+
+    .card-ads {
+        margin-top: -4px;
+        padding: 30px;
+        width: 100%;
+        height: 100%;
+        border-radius: 0 0 10px 10px;
+        order: 2;
+    }
+    
+    .card-ads h3 {
+        font-size: calc(1rem - 2px);
+        font-weight: 600;
+        opacity: 0.65;
+    }
+    
+    .card-ads .p1 {
+        font-size: 21px;
+        font-family: "SF Pro Display Semibold", sans-serif;
+    }
+
+    .card-ads li a {
+        color: #3f7ebe;
+    }
+
+    /* image */
+
+    .img-holder {
+        width: 100%;
+        height: 45.2%;
+    }
+
+    .img-holder img {
+        border-radius: 10px 10px 0 0;
+        min-width: 100%;
+        object-fit: contain;
+    }
+
+    /* grid promo section */
+    .grid-section-promo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 36.25rem;
+        gap: 28px;
+    }
+
+    .grid-section-promo .card-ads {
+        width: 100%;
+        border-radius: 10px 10px;
+    }
+
+    .grid-section-promo .card-1 {
+        margin: 0;
+    }
+
+    .grid-section-promo .card-2 {
+        margin: 0;
+    }
+
+    .grid-section-promo .p1 {
+        margin: 8px 0 3px;
+        text-align:center;
+    }
+
+    .grid-section-promo .card-ads img {
+        width: 4.6875rem;
+        margin: 0 auto;
+    }
+
+    /* promo section copy */
+    .program-section-card-copy-1 {
+        margin-top: 28px;
+        width: 100%;
+    }
+
+    .program-section-card-copy-1 .card-ads .p1 {
+        white-space: wrap;
+        width: 100%;
+        letter-spacing: -0.49px;
+    }
+
+    .program-section-card-copy-1 .card-ads li {
+        height: auto;
+        margin-top: 9px;
+        text-align: center;
+    }
+
+    .program-section-card-copy-1 .img-holder {
+        width: 100%;
+    }
+
+    .img-holder img {
+        min-width: 100%;
+    }
+
+    /* carrier logo */
+    .grid-section-promo-copy-1 .carrier-logo img {
+        width: 10rem;
+        margin: 0 auto;
+    }
+
+    /* we will help you get started */
+
+    .program-section-heading.program-section-heading-copy-1 {
+        width: 100%;
+        margin: 20px 0 20px;
+        padding: 0;
+        height: 40%;
+        max-height: 250px;
+        display: flex;
+    }
+
+    .program-section-heading.program-section-heading-copy-1 h2 {
+        margin: 38px 0 8px;
+    }
+
+    .program-section-heading.program-section-heading-copy-1 p {
+        font-family: "SF Pro Display Regular", sans-serif;
+    }
+
+    .program-section-card-copy-2 {
+        margin: 0;
+        width: 100%;
+    }
+
+    .program-section-card-copy-2 .img-holder {
+        width: 100%;
+        min-height: 225px;
+        max-height: 431px;
+        height: 40.2vh;
+    }
+
+    .program-section-card-copy-2 .img-holder img {
+        border-radius: 10px 10px 0 0;
+        min-width: 100%;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .program-section-card-copy-2 .card-ads {
+        border-radius: 0 0 10px 10px;
+    }
+
+    .program-section-card-copy-2 .card-ads li a {
+        margin: 0;
+    }
+
+    /* above footer */
+    .program-section .program-section-copy-1 {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .program-section-copy-1 .program-section-content .program-section-heading {
+        padding: 0;
+        margin: 0 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items:start;
+        height: fit-content;
+    }
+
+    .program-section-copy-1 .program-section-content .program-section-heading h2 {
+        width: 100%;
+        margin: 38px 0 3px;
+        text-align: center;
+    }
+
+    /* below that */
+    .section-copy-1-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+        width: 100%;
+    }
+
+    section.program-section-card-copy-1 {
+        height: 100%;
+    }
+
+    .program-section-card-copy-3, .program-section-card-copy-4 {
+        width: 100%;
+        height: auto;
+    }
+
+    .program-section-card-copy-3 .img-holder, .program-section-card-copy-4 .img-holder {
+        width: 100%;
+        height: 100%;
+    }
+
+    .program-section-card-copy-3 .img-holder img, .program-section-card-copy-4 .img-holder img {
+        min-width: 100%;
+        height: 432px;
+        object-fit: cover;
+    }
+
+    .program-section-card-copy-3 .card-ads, .program-section-card-copy-4 .card-ads {
+        padding: 30px;
+        height: fit-content;
+        width: 100%;
+        max-height: 218px;
+    }
+
+    .program-section-card-copy-3 .card-ads h3 {
+        font-size: 12px;
+    }
+
+    .program-section-card-copy-3 .card-ads .p1 {
+        height: fit-content;
+        width: 100%;
+        white-space: wrap;
+        margin: 6px 0 2px;
+    }
+
+    /* footer */
+}
