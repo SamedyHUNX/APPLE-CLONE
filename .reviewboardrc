@@ -1,5 +1,5 @@
 REVIEWBOARD_URL = "https://review.clp.kr/"
 REPOSITORY = "Luck/Hun-Vadhna-Samedy/Apple-Clone"
 REPOSITORY_TYPE = "git"
-BRANCH = "feature/#1"
-LAND_DEST_BRANCH = "feature/#1"
+BRANCH = "develop"
+LAND_DEST_BRANCH = "develop"
