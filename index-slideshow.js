@@ -115,3 +115,54 @@ function handlePlayClick() {
 
 pause.addEventListener("click", handlePauseClick);
 play.addEventListener("click", handlePlayClick);
+
+// dropdown
+
+const subMenuArray = [...document.getElementsByClassName("submenu")];
+const wrappedLiArray = [...document.getElementsByClassName("wrapped-li")];
+const aElements = document.createElement("a");
+
+const h2Text = ["Shop", "Quick Links", "Shop Special Stores"];
+const liText = [
+  "Shop the Latest",
+  "Mac",
+  "iPad",
+  "iPhone",
+  "Apple Watch",
+  "Apple Vision Pro",
+  "Accessories",
+  "Find a Store",
+  "Order Status",
+  "Apple Trade In",
+  "Financing",
+  "Certified Refurbished",
+  "Education",
+  "Business",
+  "Veterans and Military",
+  "Government",
+];
+
+for (let i = 0; i < h2Text.length; i++) {
+  subMenuArray[i].firstElementChild.textContent = h2Text[i];
+}
+
+for (let i = 0; i < liText.length; i++) {
+  for (let j of liText) {
+    wrappedLiArray[i].firstElementChild.textContent = liText[i];
+  }
+}
+
+// make the dropdown appear when clicking on the navbar element
+
+const navbarItemsArray = [...document.getElementsByClassName("desktop-group")];
+const dropDownArray = [...document.querySelectorAll(".dropdown")];
+
+navbarItemsArray.forEach((item, index) => {
+  item.addEventListener("click", () => {
+    dropDownArray[index].classList.remove("hidden");
+  });
+
+  item.addEventListener("mouseleave", () => {
+    dropDownArray[index].classList.add("hidden");
+  });
+});

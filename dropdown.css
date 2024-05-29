@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "SF Pro Display Regular", sans-serif;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.dropdown {
+  top: 44px;
+  position: relative;
+  width: 100%;
+  height: 25.5rem;
+  background-color: rgb(29, 29, 31);
+  font-size: 12px;
+}
+
+.dropdown-within {
+  width: 64rem;
+  height: 100%;
+  margin: 0 auto;
+  padding: 2.5rem 1.375rem 5.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submenu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.submenu h2 a,
+.submenu li a {
+  color: rbg(239, 239, 243);
+}
+
+.submenu li {
+  list-style: none;
+}
