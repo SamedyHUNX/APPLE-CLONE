@@ -7,7 +7,7 @@ const navBar = navbar[0];
 navBar.innerHTML = `
     <ul class="nav-items-component">
         <li id="apple-logo">
-        <a href="./index.html">
+        <a href="/index.html">
             <i class="ri-apple-fill" alt="apple logo"></i>
         </a></li>
         <li class="desktop-group"><a href="#">Store</a></li>

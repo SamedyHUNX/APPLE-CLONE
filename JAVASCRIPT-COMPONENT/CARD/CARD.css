@@ -1,0 +1,45 @@
+.content-wrapper .card .apple-card {
+  display: flex;
+  flex-direction: column;
+  height: 21.125rem;
+  width: 18.75rem;
+  cursor: pointer;
+}
+
+.content-wrapper .card .apple-card img {
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-content {
+  padding: 1.375rem 1.875rem 1.25rem;
+  height: 10.14rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 0 0 10px 10px;
+}
+
+.card-content h2 {
+  font-family: "SF Pro Display Light", sans-serif;
+  font-size: calc(1rem + 4px);
+  color: #1d1d1f;
+  text-align: left;
+  font-weight: 590;
+  margin-bottom: 6px;
+}
+
+.card-content address,
+.card-content span {
+  color: #6e6e73;
+  font-size: calc(1rem - 2px);
+  height: 2.5rem;
+}
+
+.card-content span {
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
