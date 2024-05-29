@@ -1,0 +1,517 @@
+/* all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "SF Pro Display Light", sans-serif;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  min-width: 300px;
+  max-width: 2600px;
+}
+
+.header {
+  height: 44px;
+}
+
+/* after clicking on the bag logo */
+.bag-dropdown.hide {
+  display: none;
+}
+
+.navbar-container.hide {
+  display: none;
+}
+
+/* after clicking the close button */
+
+/* **************************************** */
+
+#menu-logo {
+  display: none;
+}
+
+/* iphone 15, macbook air */
+.iphone15-section,
+.macbook-air-section {
+  position: relative;
+}
+
+.macbook-air-section .desktop-img {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.iphone15-section .text-over-hero-img,
+.macbook-air-section .text-over-hero-img {
+  top: 22%;
+  color: #000;
+}
+
+.iphone15-section .text-over-hero-img .button-wrap .buy,
+.macbook-air-section .text-over-hero-img .button-wrap .buy {
+  background-color: #f5f5f7;
+}
+
+/* grid section */
+/* grid desktop */
+
+.grid-promo-section {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 580px);
+  width: auto;
+  padding: 0 12px 12px 12px;
+  grid-gap: 12px;
+}
+
+.wwdc-2024,
+.apple-vision,
+.smart-watch,
+.trade-in-promo,
+.macbook-air-section,
+.card-promo {
+  width: 100%;
+  height: 100%;
+}
+
+.grid-promo-section .hero-section {
+  padding-bottom: 0;
+}
+
+/* GRID 1 : WWDC 2024 */
+.wwdc-2024 .text-over-hero-img {
+  display: flex;
+  position: absolute;
+  width: fit-content;
+  height: max-content;
+  top: 84%;
+}
+
+.wwdc-2024 img,
+.smart-watch img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.wwdc-2024 .text-over-hero-img .button-wrap button {
+  margin-right: 15px;
+  padding: 0;
+}
+
+/* GRID2 : SMART WATCH */
+
+.smart-watch .text-over-hero-img {
+  top: 21%;
+}
+
+.smart-watch .text-over-hero-img strong {
+  font-weight: 500;
+  margin: 37px 23.602px 0 20.602px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.smart-watch .text-over-hero-img strong .apple-logo {
+  text-align: center;
+  font-size: 3rem;
+  color: #f5f5f7;
+}
+
+.smart-watch .text-over-hero-img h6 {
+  font-size: 14px;
+  color: rgb(174, 10, 10);
+  margin-top: 6px;
+}
+
+/* GRID3 : APPLE VISION PRO */
+
+.apple-vision .desktop-img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.apple-vision .text-over-hero-img {
+  color: #000;
+  top: 82%;
+}
+
+.apple-vision .text-over-hero-img .button-wrap .learn-more {
+  margin: 0 0 0 10px;
+  padding: 7px 15px;
+}
+
+.apple-vision .text-over-hero-img .button-wrap .buy {
+  background-color: #f5f5f7;
+  margin: 0 20px 0 10px;
+  padding: 7px 15px;
+}
+
+/* GRID4 : IPAD */
+.ipad-promo img {
+  max-width: 100%;
+  object-fit: fill;
+}
+
+.ipad-promo .text-over-hero-img {
+  top: 18%;
+}
+
+.ipad-promo .text-over-hero-img h3 {
+  margin-top: 6px;
+}
+
+/* GRID5 : APPLE CARD */
+.card-promo img {
+  max-width: 100%;
+}
+
+.card-promo .text-over-hero-img strong .apple-logo {
+  font-size: 38px;
+  color: #000;
+}
+
+.card-promo .text-over-hero-img {
+  color: #000;
+}
+
+.card-promo .text-over-hero-img h3 {
+  margin-top: 6px;
+}
+
+.card-promo .text-over-hero-img .button-wrap .apply-now {
+  width: 99px;
+  background-color: #f5f5f7;
+}
+
+/* GRID6 : APPLE TRADE IN */
+
+.trade-in-promo .text-over-hero-img .button-wrap button {
+  width: 146px;
+}
+
+/* slider images */
+
+.my-slider {
+  height: 667px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.slideshow-apple {
+  display: grid;
+  grid-template-columns: repeat(10, 1250px);
+  height: 667px;
+  gap: 1.2rem;
+  overflow: hidden;
+}
+
+.image-slider {
+  width: 100%;
+  height: 667px;
+  animation: snap 15s linear infinite;
+}
+
+.image-slider img {
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-figure img.active {
+  opacity: 1;
+}
+
+@keyframes snap {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* nav dots */
+.nav-dots {
+  margin-top: 3px;
+  width: 100%;
+  height: 25px;
+  margin-bottom: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-nav-dots {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 220px;
+  height: 100%;
+}
+
+.dot {
+  border: none;
+  height: 8px;
+  width: 8px;
+  background-color: #1d1d1f;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+  opacity: 0.5;
+}
+
+.dot.active {
+  background-color: #000;
+  opacity: 1;
+}
+
+/* carousel */
+
+.carousel-slider {
+  width: 100%;
+  height: 236px;
+  margin-top: 6px;
+}
+
+.carousel-slider .carousel-figure {
+  display: grid;
+  grid-template-columns: repeat(12, 417px);
+  width: fit-content;
+  height: 236px;
+  gap: 1.2rem;
+  overflow: hidden;
+}
+
+.carousel-slider .carousel-figure .image-slider {
+  width: 100%;
+  height: 236px;
+  animation: snap 10s linear infinite;
+}
+
+.carousel-slider .carousel-figure .image-slider img {
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* pause and play to stop the carousel */
+.pause-play {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.pause-play-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 100%;
+}
+
+.pause-play-wrapper i {
+  padding: 2px;
+  font-size: 32px;
+}
+
+/* pause and play button control */
+#play.hide,
+#pause.hide {
+  display: none;
+}
+
+/* all images */
+.hero-section.desktop-img {
+  display: inline-block;
+}
+
+.hero-section .desktop-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-img.mobile-img {
+  display: none;
+}
+
+/* footer */
+
+.footer {
+  background-color: #dedede8f;
+  width: 100%;
+  height: fit-content;
+}
+
+.footer .another-footer-container {
+  width: 100%;
+  max-width: 1024px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 22px;
+}
+
+.footer .another-footer-container .footer-text-wrapper {
+  padding: 17px 0 11px;
+  width: 100%;
+  border-bottom: 1px solid #0000008e;
+}
+
+.footer .another-footer-container .footer-text-wrapper .footer-text-container {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: justify;
+}
+
+.footer
+  .another-footer-container
+  .footer-text-wrapper
+  .footer-text-container
+  li {
+  width: 100%;
+  padding: 0 0 9.6px;
+  font-family: "SF Pro Display Regular";
+  font-size: 12px;
+  color: #0000008f;
+}
+
+.footer
+  .another-footer-container
+  .footer-text-wrapper
+  .footer-text-container
+  li
+  a {
+  color: #0000008f;
+  font-weight: 500;
+}
+
+/* footer list */
+
+.footer .another-footer-container .footer-dropdown-wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 20px 0 0;
+  height: 459.91px;
+  list-style: none;
+  width: 100%;
+}
+
+#div-1,
+#div-2,
+#div-3,
+#div-4,
+#div-5 {
+  /* display: grid; */
+  height: 100%;
+  width: 100%;
+  font-size: 12px;
+  font-family: "SF Pro Display Regular", sans-serif;
+}
+
+.mobile-footer {
+  width: 176px;
+  height: 16px;
+  height: fit-content;
+  margin: 0 20px 9.6px 0;
+}
+
+#div-1 span,
+#div-2 span,
+#div-3 span,
+#div-4 span,
+#div-5 span {
+  font-weight: 570;
+}
+
+#div-1 i,
+#div-2 i,
+#div-3 i,
+#div-4 i,
+#div-5 i {
+  display: none;
+}
+
+.wrapped-div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.wrapped-div.hide {
+  display: none;
+}
+
+/* .wrapped-div div {
+    margin: 0 20px 0 0;
+    height: 100%;
+} */
+
+.wrapped-div div li {
+  margin: 0 0 9.6px;
+}
+
+.wrapped-div div li a {
+  text-decoration: none;
+  color: #000000b8;
+  opacity: 0.7;
+}
+
+/* footer bottom */
+
+.gf-footer {
+  border-top: 1px solid #0000008e;
+  font-family: "SF Pro Display Regular", sans-serif;
+  font-size: 12px;
+  padding: 37px 0 11px;
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  opacity: 0.6;
+}
+
+.gf-footer #first-div {
+  margin: 0 0 16px;
+  padding: 0 0 19px;
+}
+
+.gf-footer #first-div a {
+  color: #0066cc;
+  opacity: 1;
+  font-weight: 500;
+}
+
+.gf-footer #second-div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gf-footer #second-div a {
+  text-decoration: none;
+  color: #000000b8;
+  opacity: 1;
+  font-weight: 500;
+  padding: 0 9px 0 0;
+  border-right: 1px solid #0000008e;
+}
+
+.gf-footer #second-div #last-a {
+  border-right: none;
+}
