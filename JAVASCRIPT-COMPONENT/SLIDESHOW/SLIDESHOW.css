@@ -1,0 +1,22 @@
+@media screen and (max-width: 940px) {
+    /* slideshow for mobile */
+    .my-slider {
+        height: 533px;
+    }
+
+    .slideshow-apple {
+        grid-template-columns: repeat(10, 290px);
+        height: 533px;
+    }
+    
+    .image-slider {
+        width: 100%;
+        height: 533px;
+        overflow: hidden;
+    }
+    
+    .image-slider img {
+        min-width: 100%;
+        object-fit: contain;
+    }
+}

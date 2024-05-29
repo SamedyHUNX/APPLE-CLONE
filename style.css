@@ -28,7 +28,7 @@ html {
   display: grid;
   position: relative;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 580px);
+  grid-template-rows: repeat(3, 36.25rem);
   padding: 0 1rem 1rem 1rem;
   gap: 1rem;
 }
@@ -64,13 +64,9 @@ html {
 .my-slider {
   display: flex;
   flex-direction: column;
-}
-
-.my-slider {
-  height: 667px;
   width: 100%;
+  height: 41.69rem;
   position: relative;
-  display: flex;
   overflow: hidden;
 }
 
@@ -146,8 +142,8 @@ html {
 
 .carousel-slider {
   width: 100%;
-  height: 236px;
-  margin-top: 6px;
+  height: 14.75rem;
+  margin-top: 12px;
 }
 
 .carousel-slider .carousel-figure {

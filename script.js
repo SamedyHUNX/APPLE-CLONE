@@ -4,7 +4,6 @@ const arrayHeroImg = [...document.getElementsByClassName("hero-img")];
 function updateHeroImage() {
   const screenWidth = window.innerWidth;
   const heroImg = document.getElementsByClassName("hero-img");
-  const arrayHeroImg = [...heroImg];
 
   arrayHeroImg.forEach((image) => {
     if (screenWidth >= 1140) {
