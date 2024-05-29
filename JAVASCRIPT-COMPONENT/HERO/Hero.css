@@ -29,6 +29,8 @@
   text-align: center;
 }
 
+
+/* strong element */
 .text-over-hero-img strong {
   width: 100%;
   height: 100%;
@@ -43,6 +45,7 @@
   justify-content: center;
 }
 
+/* h3 element */
 .text-over-hero-img h3 {
   width: 100%;
   font-size: 28px;
