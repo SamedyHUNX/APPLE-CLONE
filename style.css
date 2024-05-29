@@ -16,19 +16,6 @@ html {
   margin: auto;
 }
 
-.header {
-  height: 44px;
-}
-
-/* after clicking on the bag logo */
-.bag-dropdown.hide {
-  display: none;
-}
-
-.navbar-container.hide {
-  display: none;
-}
-
 /* **************************************** */
 
 #menu-logo {
@@ -46,10 +33,20 @@ html {
   gap: 1rem;
 }
 
+/* grid strong and h3 */
+.grid-promo-section .hero strong {
+  font-size: 2.56rem;
+}
+
+.grid-promo-section .hero h3 {
+  font-size: 1.31rem;
+  white-space: wrap;
+}
 
 .grid-promo-section .grid-hero {
   width: 100%;
   height: 100%;
+  padding: 0;
 }
 
 .grid-hero .hero-img {
@@ -58,7 +55,16 @@ html {
   object-fit: cover;
 }
 
+.grid-promo-section #grid-1 .text-over-hero-img,
+.grid-promo-section #grid-2 .text-over-hero-img {
+  top: 80%;
+}
+
 /* slider images */
+.my-slider {
+  display: flex;
+  flex-direction: column;
+}
 
 .my-slider {
   height: 667px;
@@ -374,4 +380,17 @@ html {
 
 .gf-footer #second-div #last-a {
   border-right: none;
+}
+
+
+@media screen and (max-width: 940px) {
+  /* grid section */
+  .grid-promo-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 500px);
+    width: 100%;
+    height: auto;
+    padding: 12px 0 0 0;
+    gap: 12px;
+}
 }

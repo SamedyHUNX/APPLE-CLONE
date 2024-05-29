@@ -1,14 +1,13 @@
 "use strict";
 
-const heroImg = document.getElementsByClassName("hero-img");
-const arrayHeroImg = [...heroImg];
+const arrayHeroImg = [...document.getElementsByClassName("hero-img")];
 function updateHeroImage() {
   const screenWidth = window.innerWidth;
   const heroImg = document.getElementsByClassName("hero-img");
   const arrayHeroImg = [...heroImg];
 
   arrayHeroImg.forEach((image) => {
-    if (screenWidth >= 940) {
+    if (screenWidth >= 1140) {
       // iphone 15 pro
       arrayHeroImg[0].setAttribute(
         "src",
@@ -71,7 +70,7 @@ function updateHeroImage() {
       // grid apple ipad but alt
       arrayHeroImg[6].setAttribute(
         "alt",
-        "iPad Pro"
+        "iPad"
       )
       // grid apple card
       arrayHeroImg[7].setAttribute(
@@ -124,6 +123,11 @@ function updateHeroImage() {
         "src",
         "./assets/images/Promo/Watch/promo_apple_watch_series_9_order__b3u85rm9zf6u_small_2x.jpg"
       )
+      // grid apple ipad
+      arrayHeroImg[6].setAttribute(
+        "src",
+        "./assets/images/Promo/Ipad/promo_ipad__fioegapg12qi_small_2x.jpg"
+      )
       // grid apple card
       arrayHeroImg[7].setAttribute(
         "src",
@@ -141,3 +145,77 @@ function updateHeroImage() {
 updateHeroImage();
 
 window.addEventListener("resize", updateHeroImage);
+
+// button deletion for grid section
+const buttonLearnMore = [...document.getElementsByClassName('learn-more')];
+const buttonBuy = [...document.getElementsByClassName('buy')];
+
+buttonBuy[7].textContent = 'Apply now';
+
+buttonLearnMore[8].textContent = 'Get your estimate';
+buttonLearnMore[8].style.color = 'white';
+
+buttonBuy[3].remove();
+buttonBuy[8].remove();
+
+// text over hero image strong
+const textStrongArray = [...document.getElementsByClassName("text-over-hero-img")];
+const strongCopiedArray = textStrongArray.map(element => element.firstElementChild);
+const h3SelectaArray = [...document.querySelectorAll('.text-over-hero-img h3')];
+const appleLogo = '<i class="apple-logo ri-apple-fill"></i>';
+
+textStrongArray.forEach((text, index) => {
+    // strong elements
+    const strongArray = [
+    'iPhone 15 Pro',
+    'iPhone 15',
+    'MacBook Air',
+    ' ',
+    'Vision Pro',
+    'WATCH',
+    'iPad',
+    'Card',
+    'Trade In',
+    ]
+    text.firstElementChild.textContent = strongArray[index];
+
+    // h3 elements
+    const h3Array = ['Titanium. So strong. So light. So Pro.',
+    'New Camera. New Design. Newphoria.',
+    'Lean. Mean. M3 machine.',
+    'Apple Worldwide Developers Conference Join us online June 10-14.',
+    'Welcome to the era of spatial computing.',
+    'Smart. Brightier. Mightier',
+    'Lovable. Drawable. Magical.',
+    'Get up to 3% Daily Cash back with every purchase.',
+    'Get $170-$630 in credit when you trade in iPhone 11 or higher.'
+    ]
+    for (let i = 0; i < h3SelectaArray.length; i++) {
+        h3SelectaArray[i].textContent = h3Array[i];
+    }
+})
+// marking the end
+
+// black background so do not have to change strong, h3, button background to black or white
+// 1 indicates black and 0 represents white
+const excludedIndexes = [1, 0, 0, 1, 1, 1, 0, 0, 0]
+excludedIndexes.forEach((element, i) => {
+    if (element === 1) {
+        h3SelectaArray[i].style.color = 'white';
+        strongCopiedArray[i].style.color = 'white';
+        buttonBuy[i].style.backgroundColor = 'black';
+    } else {
+        h3SelectaArray[i].style.color = 'black';
+        strongCopiedArray[i].style.color = 'black';
+        buttonBuy[i].style.backgroundColor = 'white';
+    }
+})
+// marking the end
+
+strongCopiedArray.forEach((element, index) => {
+    for (let j = 0; j < strongCopiedArray.length; j++) {
+        if (index >= 4 && !element.querySelector('.apple-logo')) {
+            element.insertAdjacentHTML('afterBegin', appleLogo)
+        }
+    }
+})
