@@ -75,4 +75,28 @@ for (let i = 0; i < slideshowLength; i++) {
     }
 }
 
+// navigation dot of the smaller carousel
+const navDotsSmaller = document.querySelectorAll('.carousel-slider .nav-dots')[0];
+
+navDotsSmaller.remove();
+
+// pause and play button to stop the second carousel
+
+const pausePlayArray = [...document.getElementsByClassName('pause-play')];
+const pause = document.getElementById('pause');
+const play = document.getElementById('play');
+const smallerCarousel = document.querySelector('.my-slider.carousel-slider .image-slider');
+
+function handlePauseClick() {
+    play.classList.remove('hidden');
+    pause.classList.add('hidden');
+}
+
+function handlePlayClick() {
+    play.classList.add('hidden');
+    pause.classList.remove('hidden');
+}
+
+pause.addEventListener('click', handlePauseClick);
+play.addEventListener('click', handlePlayClick)
 

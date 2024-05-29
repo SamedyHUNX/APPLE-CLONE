@@ -140,31 +140,34 @@ html {
 
 /* carousel */
 
-.carousel-slider {
+.my-slider.carousel-slider {
   width: 100%;
   height: 14.75rem;
   margin-top: 12px;
 }
 
-.carousel-slider .carousel-figure {
+.my-slider.carousel-slider .slider-figure.slideshow-apple {
   display: grid;
-  grid-template-columns: repeat(12, 417px);
-  width: fit-content;
-  height: 236px;
-  gap: 1.2rem;
-  overflow: hidden;
+  grid-template-columns: repeat(12, 26.06rem);
+  height: 100%;
+  gap: 0.8rem;
 }
 
-.carousel-slider .carousel-figure .image-slider {
+.my-slider.carousel-slider .image-slider {
   width: 100%;
-  height: 236px;
+  height: 14.75rem;
+  overflow: hidden;
   animation: snap 10s linear infinite;
 }
 
-.carousel-slider .carousel-figure .image-slider img {
-  min-width: 100%;
-  height: 100%;
-  object-fit: cover;
+.my-slider.carousel-slider .slider-figure.slideshow-apple .image-slider {
+  width: 100%;
+  height: 236px;
+}
+
+.my-slider.carousel-slider .slider-figure.slideshow-apple .image-slider img {
+  max-height: 100%;
+  object-fit: fill;
 }
 
 /* pause and play to stop the carousel */
@@ -190,8 +193,8 @@ html {
 }
 
 /* pause and play button control */
-#play.hide,
-#pause.hide {
+#play.hidden,
+#pause.hidden {
   display: none;
 }
 
