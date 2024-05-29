@@ -146,6 +146,11 @@ for (let i = 0; i < h2Text.length; i++) {
   subMenuArray[i].firstElementChild.textContent = h2Text[i];
 }
 
+subMenuArray[1].lastElementChild.firstElementChild.firstElementChild.setAttribute(
+  "href",
+  "/findstore/findstore.html"
+);
+
 for (let i = 0; i < liText.length; i++) {
   for (let j of liText) {
     wrappedLiArray[i].firstElementChild.textContent = liText[i];
@@ -162,7 +167,7 @@ navbarItemsArray.forEach((item, index) => {
     dropDownArray[index].classList.remove("hidden");
   });
 
-  item.addEventListener("mouseleave", () => {
+  dropDownArray[index].addEventListener("mouseleave", () => {
     dropDownArray[index].classList.add("hidden");
   });
 });
