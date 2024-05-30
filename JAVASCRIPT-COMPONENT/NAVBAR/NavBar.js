@@ -28,5 +28,4 @@ navBarArray.forEach(navBar => {
         </li>
     </ul>
 `;
-
 })

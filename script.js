@@ -216,5 +216,17 @@ strongCopiedArray.forEach((element, index) => {
             element.insertAdjacentHTML('afterBegin', appleLogo)
         }
     }
+});
+
+const loginPageArray = [...document.getElementsByClassName('nav-items-component')];
+
+loginPageArray.forEach(login => {
+  login.lastElementChild.classList.add('right-group');
+})
+
+const rightGroupArray = [...document.getElementsByClassName('right-group')];
+
+rightGroupArray.forEach(right => {
+  right.children[1].setAttribute('href', "./sign-in-page/signin.html")
 })
 
