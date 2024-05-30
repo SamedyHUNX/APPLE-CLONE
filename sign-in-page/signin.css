@@ -4,22 +4,22 @@
     box-sizing: border-box;
 }
 
-.mobile-ele {
-    display: none;
-}
-
 body, html {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     font-size: 16px;
     scrollbar-width: none;
     overflow-y: scroll;
     min-width: 300px;
 }
 
+.mobile-ele {
+    display: none;
+}
+
 /* navigation bar */
 
-.nav-sign-in {
+/* .nav-sign-in {
     background-color: white !important;
 }
 
@@ -37,7 +37,7 @@ body, html {
 .nav-sign-in .ul-container .nav-items .navigation-item a {
     color: black;
     opacity: 0.75;
-}
+} */
 
 /* sign in box */
 .sign-in-section {
@@ -323,6 +323,127 @@ input[type="text"] {
 .copyright ul .mid-element {
     border-left: 1px solid #0000008E;
     border-right: 1px solid #0000008E;
+}
+
+/* marking the end */
+/* media for smaller screen */
+@media screen and (max-width: 1030px) {
+    body, html {
+        overflow-y: scroll;
+    }
+    .sign-in-section {
+        height: 470px;
+    }
+    .sign-in-section .sign-in-section-top {
+        margin: 0 18px 0 18px;
+        width: 70vw;
+        height: 430px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sign-in-section .sign-in-section-top h1 {
+        width: 100%;
+        height: 36px;
+        text-align: center;
+        margin: 5px 0 20px;
+        font-family: "SF Pro Display Light", sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: -0.216px;
+        max-width: 380px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+    }
+
+    h1.h1-within-input-wrapper {
+        display: none !important;
+    }
+
+    .sign-in-section-top .desktop-ele {
+        display: none !important;
+    }
+
+    /* input */
+    .input-wrapper {
+        height: 341px;
+        margin: 0px 40px;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+
+    .input-wrapper form {
+        margin: 0;
+        height: 56px;
+    }
+
+    .input-wrapper form input {
+        width: 100%;
+        height: 56px;
+    }
+
+    input[type="text"] {
+        padding: 18px 43px 16px 16px;
+        font-size: 17px;
+    }
+
+    .input-wrapper form button {
+        font-size: 34px;
+        top: 19%;
+    }
+
+    .remember-me {
+        font-size: 18px;
+        height: 19px;
+        padding: 0px 0px 20px;
+    }
+
+    .remember-me p {
+        padding: 1px 0px 0px 13px;
+    }
+
+    /* forgot password */
+    .forgot-password {
+        height: 29px;
+        padding: 0px 0px 13px;
+    }
+
+    .forgot-password a {
+        font-size: 15px;
+    }
+
+    /* final part dont have an apple id... */
+
+    /* final div */
+    .sign-in-section-below {
+        height: 93px;
+        flex-wrap: wrap;
+    }
+
+    .sign-in-section-below .below-wrapper {
+        margin: 0 2.5vw;
+    }
+
+    /* footer of the page */
+
+    .page-footer {
+        padding: 0px 2.5vw;
+        top: 9%;
+    }
+
+    .footer-top, .footer-bottom {
+        width: 100%;
+    }
+
+    .footer-top {
+        padding: 7px 0px 11px;
+    }
+
+    .copyright ul {
+        flex-wrap: wrap;
+    }
 }
 
 /* marking the end */
