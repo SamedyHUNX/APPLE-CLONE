@@ -1,14 +1,14 @@
 // changing card attributes
 const cardSourcesArray = [
-  "/assets/images/FINDSTORE PAGE/Carousel/Apple Aventura.jpg",
-  "/assets/images/FINDSTORE PAGE/Carousel/Apple Briarwood.jpg",
-  "/assets/images/FINDSTORE PAGE/Carousel/Apple Crabtree Valley Mall.jpg",
-  "/assets/images/FINDSTORE PAGE/Carousel/Apple Lehig Valley.jpg",
-  "/assets/images/FINDSTORE PAGE/Carousel/Apple River Park Square.jpg",
-  "/assets/images/FINDSTORE PAGE/Carousel/Apple Southpoint.jpg",
-  "/assets/images/FINDSTORE PAGE/Carousel/Apple Town Square.jpg",
-  "/assets/images/FINDSTORE PAGE/Carousel/Apple Valley Plaza.jpg",
-  "/assets/images/FINDSTORE PAGE/Carousel/Apple Victoria Garden.jpg",
+  "./assets/images/FINDSTORE PAGE/Carousel/Apple Aventura.jpg",
+  "./assets/images/FINDSTORE PAGE/Carousel/Apple Briarwood.jpg",
+  "./assets/images/FINDSTORE PAGE/Carousel/Apple Crabtree Valley Mall.jpg",
+  "./assets/images/FINDSTORE PAGE/Carousel/Apple Lehig Valley.jpg",
+  "./assets/images/FINDSTORE PAGE/Carousel/Apple River Park Square.jpg",
+  "./assets/images/FINDSTORE PAGE/Carousel/Apple Southpoint.jpg",
+  "./assets/images/FINDSTORE PAGE/Carousel/Apple Town Square.jpg",
+  "./assets/images/FINDSTORE PAGE/Carousel/Apple Valley Plaza.jpg",
+  "./assets/images/FINDSTORE PAGE/Carousel/Apple Victoria Garden.jpg",
 ];
 
 const altsArray = [

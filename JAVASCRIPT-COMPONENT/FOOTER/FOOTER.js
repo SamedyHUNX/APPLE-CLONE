@@ -61,7 +61,7 @@ footer.innerHTML = `
     </div>
     <div class="wrapped-div hidden" id="dropdown1">
       <div>
-        <li><a href="/findstore/findstore.html">Store</a></li>
+        <li><a href="./findstore.html">Store</a></li>
         <li><a href="#">Mac</a></li>
         <li><a href="#">iPad</a></li>
         <li><a href="#">iPhone</a></li>
