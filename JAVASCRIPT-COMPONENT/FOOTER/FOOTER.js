@@ -250,3 +250,24 @@ footer.innerHTML = `
 </div>
 </div>
 `
+
+// marking the end of the injection codes
+
+const eachLiFooterArray = [...document.getElementsByClassName('wrapped-div')];
+
+const upArrowsArray = [...document.getElementsByClassName('up-arrow')];
+const downArrowsArray = [...document.getElementsByClassName('down-arrow')];
+
+downArrowsArray.forEach((arrow, index) => {
+  arrow.addEventListener('click', () => {
+    upArrowsArray[index].classList.remove('hide');
+    downArrowsArray[index].classList.add('hide');
+    eachLiFooterArray[index].classList.remove('hidden');
+  })
+
+  upArrowsArray[index].addEventListener('click', () => {
+    upArrowsArray[index].classList.add('hide');
+    downArrowsArray[index].classList.remove('hide');
+    eachLiFooterArray[index].classList.add('hidden');
+  })
+})
