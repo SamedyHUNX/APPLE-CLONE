@@ -227,6 +227,6 @@ loginPageArray.forEach(login => {
 const rightGroupArray = [...document.getElementsByClassName('right-group')];
 
 rightGroupArray.forEach(right => {
-  right.children[1].setAttribute('href', "./sign-in-page/signin.html")
+  right.children[1].setAttribute('href', "/signin.html")
 })
 

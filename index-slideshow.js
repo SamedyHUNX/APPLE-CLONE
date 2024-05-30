@@ -149,7 +149,7 @@ for (let i = 0; i < h2Text.length; i++) {
 
 subMenuArray[1].lastElementChild.firstElementChild.firstElementChild.setAttribute(
   "href",
-  "/findstore/findstore.html"
+  "/findstore.html"
 );
 
 for (let i = 0; i < liText.length; i++) {
