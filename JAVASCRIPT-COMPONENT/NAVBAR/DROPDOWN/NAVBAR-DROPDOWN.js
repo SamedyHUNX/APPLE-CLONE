@@ -1,8 +1,9 @@
 "use strict";
 
-const subMenu = document.getElementsByClassName("dropdown")[0];
+const subMenuGlobalArray = [...document.getElementsByClassName("dropdown")];
 
-subMenu.innerHTML = `
+subMenuGlobalArray.forEach(subArray => {
+  subArray.innerHTML = `
 <div class="dropdown-within">
 <div class="submenu">
   <h2><a>#</a></h2>
@@ -37,3 +38,5 @@ subMenu.innerHTML = `
 </div>
 </div>
 `;
+
+})

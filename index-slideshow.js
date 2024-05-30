@@ -121,6 +121,7 @@ play.addEventListener("click", handlePlayClick);
 const subMenuArray = [...document.getElementsByClassName("submenu")];
 const wrappedLiArray = [...document.getElementsByClassName("wrapped-li")];
 const aElements = document.createElement("a");
+const subMenuMacArray = [...document.querySelectorAll('.mac')]
 
 const h2Text = ["Shop", "Quick Links", "Shop Special Stores"];
 const liText = [

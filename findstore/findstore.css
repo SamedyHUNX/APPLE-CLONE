@@ -18,6 +18,15 @@ html {
   background-color: rgb(230, 230, 230);
 }
 
+/* navbar adjustment for this specific page */
+.findstore.navbar {
+  background-color: #ffffff;
+}
+
+.findstore.navbar ul li a {
+  color: black;
+}
+
 /* styling search section and search bar */
 .store-search-bar {
   width: 100%;
@@ -772,8 +781,9 @@ section.program-section {
   }
 
   /* above footer */
-  .program-section .program-section-copy-1 {
+  .program-section.program-section-copy-1 {
     width: 100%;
+    position: absolute;
     height: fit-content;
   }
 

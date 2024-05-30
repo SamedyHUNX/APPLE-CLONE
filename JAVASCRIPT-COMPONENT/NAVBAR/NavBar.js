@@ -1,10 +1,10 @@
 "use strict";
 
-const navbar = document.getElementsByClassName("navbar");
+const navBarArray = [...document.getElementsByClassName("navbar")];
 
-const navBar = navbar[0];
 
-navBar.innerHTML = `
+navBarArray.forEach(navBar => {
+    navBar.innerHTML = `
     <ul class="nav-items-component">
         <li id="apple-logo">
         <a href="/index.html">
@@ -28,3 +28,5 @@ navBar.innerHTML = `
         </li>
     </ul>
 `;
+
+})

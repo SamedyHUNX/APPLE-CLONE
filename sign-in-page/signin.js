@@ -1,3 +1,1 @@
-function submitForm() {
-    alert('Submitted!')
-}
+'use strict';

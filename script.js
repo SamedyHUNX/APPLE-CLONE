@@ -1,5 +1,4 @@
 "use strict";
-
 const arrayHeroImg = [...document.getElementsByClassName("hero-img")];
 function updateHeroImage() {
   const screenWidth = window.innerWidth;
@@ -218,3 +217,4 @@ strongCopiedArray.forEach((element, index) => {
         }
     }
 })
+
