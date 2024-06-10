@@ -39,7 +39,6 @@ const dropDownContainerArray = Array.from(document.getElementsByClassName('dropd
 const aTextContent = ['Store', 'Mac', 'iPad', 'iPhone', 'Watch', 'Vision', 'AirPods', 'TV & Home', 'Entertainment', 'Acessories', 'Support'];
 
 (function() {
-
 desktopGroupArray.forEach((a, index) => {
     a.textContent = aTextContent[index];
 })

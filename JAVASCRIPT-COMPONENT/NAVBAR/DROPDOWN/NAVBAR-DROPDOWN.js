@@ -40,8 +40,9 @@ desktopGroupArray.forEach((element, i) => {
     subMenuGlobalArray[i].classList.add('hidden');
   })
 })
+// marking the end of dropdown styling section..
 
-// dropdown
+// dropdown's submenu adding element
 const subMenuArray = [...document.getElementsByClassName("submenu")];
 // create li elements
 const liElement = document.createElement('li');
@@ -52,29 +53,19 @@ const aElements = document.createElement("a");
 liElement.appendChild(aElements);
 // ul container aka. each subarray
 const ulContainersArray = [...document.getElementsByClassName('ul-container')];
+const subMenuDropdownArray = [...document.querySelectorAll('.dropdown-within')];
 
-// store dropdown
-function initializeDropdown() {
-const subMenuSubarrayAndElements = [
-  ['Shop', ['Shop the Latest', 'Mac', 'iPad', 'iPhone', 'Apple Watch', 'Apple Vision Pro', 'Accessories']],
-  ['Quick Links', ['Find a Store', 'Order Status', 'Apple Trade In', 'Financing']],
-  ['Shop Special Stores', ['Certified Refurbished', 'Education', 'Business', 'Veterans and Military', 'Government']]
-]
-
-subMenuArray.forEach((subMenu, i) => {
-  subMenu.firstElementChild.textContent = subMenuSubarrayAndElements[i][0];
+// all dropdown menu within the navbar;
+document.addEventListener('DOMContentLoaded', function() {
+  for (let i = 0; i < subMenuSubarrayAndElementsArray.length; i++) {
+    for (let j = 0; j < subMenuSubarrayAndElementsArray[i].length; j++) {
+      subMenuDropdownArray[i].children[j].firstElementChild.firstElementChild.textContent = subMenuSubarrayAndElementsArray[i][j][0];
+      for (let k = 0; k < subMenuSubarrayAndElementsArray[i][j][1].length; k++) {
+        const liElement = document.createElement('li');
+        dropDownContainerArray[0].children[i].firstElementChild.children[j].lastElementChild.appendChild(liElement);
+        dropDownContainerArray[0].children[i].firstElementChild.children[j].lastElementChild.children[k].textContent = subMenuSubarrayAndElementsArray[i][j][1][k];
+      }
+    }
+  }
 });
-
-// Loop through each ul element and append list items
-ulContainersArray.forEach((ulMenu, i) => {
-  subMenuSubarrayAndElements[i][1].forEach(text => {
-    const liElement = document.createElement('li');
-    liElement.textContent = text;
-    ulMenu.appendChild(liElement);
-  });
-});
-};
-
-desktopGroupArray.forEach((a, i) => {
-  initializeDropdown(a);
-})
+  
