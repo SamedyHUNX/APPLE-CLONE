@@ -1,41 +1,34 @@
 "use strict";
 
+//  IIFE for hero-img picture..
 (function() {
 // all the hero-image elements
 const arrayHeroImg = Array.from(document.getElementsByClassName("hero-img"));
-// array to hold all the photo src and alt attributes
-const heroImgAttributeArray = [
-  [['src', "./assets/images/IPhone/hero-ip15-new.jpg"], ['alt', 'iPhone 15 Pro'], ["src", "./assets/images/IPhone/For mobile/hero_iphone15pro__i70z9oz3hj2i_small_2x.jpg"]],
-  [['src', "./assets/images/IPhone/hero_iphone15_announce__uuemlcwczn6u_largetall_2x.jpg"], ['alt', 'iPhone 15'], ["src", "./assets/images/IPhone/hero_iphone15_announce__uuemlcwczn6u_largetall_2x.jpg"]],
-  [['src', "./assets/images/Macbook/promo_macbook_air_m3__e43jegok3wuq_large_2x.jpg"], ['alt', 'MacBook Air'], ['src', "./assets/images/Macbook/promo_macbook_air_m3__e43jegok3wuq_small_2x.jpg"]],
-  [['src', "./assets/images/Promo/WWDC/promo_wwdc24_announce__fv0p5miwnjiq_large_2x.jpg"], ['alt', 'WWDC 2024'], ['src', "./assets/images/Promo/WWDC/promo_wwdc24_announce__fv0p5miwnjiq_small_2x.jpg"]],
-  [['src', "./assets/images/Promo/Vision Pro/apple-vision-pro.jpg"], ['alt', 'Apple Vision Pro'], ['src', "./assets/images/Promo/Vision Pro/apple-vision-pro-small.jpg"]],
-  [['src', "./assets/images/Promo/Watch/promo_apple_watch_series_9_order__b3u85rm9zf6u_large_2x.jpg"], ['alt', 'Apple Smart Watch'], ['src', "./assets/images/Promo/Watch/promo_apple_watch_series_9_order__b3u85rm9zf6u_small_2x.jpg"]],
-  [['src', "./assets/images/Promo/Ipad/promo_ipad__fioegapg12qi_small_2x.jpg"], ['alt', 'iPad'], ['src', "./assets/images/Promo/Ipad/promo_ipad__fioegapg12qi_small_2x.jpg"]],
-  [['src', "./assets/images/Promo/Card/tile__cauwwcyyn9hy_large_2x.jpg"], ['alt', 'iCard'], ['src', "./assets/images/Promo/Card/tile__cauwwcyyn9hy_small_2x.jpg"]],
-  [['src', "./assets/images/Promo/Trade in/promo_iphone_tradein__bugw15ka691e_large_2x.jpg"], ['alt', 'Apple Trade-in'], ['src', "./assets/images/Promo/Trade in/promo_iphone_tradein__bugw15ka691e_small_2x.jpg"]]
-];
 
 // adjustment to make the photo appear differently in a different screen-width
 function updateHeroImage() {
   const screenWidth = window.innerWidth;
   arrayHeroImg.forEach((image, i) => {
     if (screenWidth >= 1140) {
+      // these photo appear on a bigger screen (desktop)
       image.setAttribute(heroImgAttributeArray[i][0][0], heroImgAttributeArray[i][0][1]);
       image.setAttribute(heroImgAttributeArray[i][1][0], heroImgAttributeArray[i][1][1]);
     } else {
+      // these photo appear on a smaller screen (mobile)
       image.setAttribute(heroImgAttributeArray[i][2][0], heroImgAttributeArray[i][2][1]);
     }
   });
-}
+};
 
 updateHeroImage();
 
 window.addEventListener("resize", updateHeroImage);
-// marking the end of hero component styling..
 })();
 
+// marking the end of hero component styling..
+
 // button deletion for grid section
+// static styling deletion is used here because the index of element to delte 
 const buttonLearnMore = [...document.getElementsByClassName('learn-more')];
 const buttonBuy = [...document.getElementsByClassName('buy')];
 
@@ -49,29 +42,25 @@ buttonBuy[8].remove();
 // marking the end of button deletion for the grid section..
 
 // text over hero image strong
-const textStrongArray = [...document.getElementsByClassName("text-over-hero-img")];
+let textStrongArray = [...document.getElementsByClassName("text-over-hero-img")];
 const strongCopiedArray = textStrongArray.map(element => element.firstElementChild);
 const h3SelectaArray = [...document.querySelectorAll('.text-over-hero-img h3')];
 // external apple logo
 const appleLogo = '<i class="apple-logo ri-apple-fill"></i>';
 
-textStrongArray.forEach((text, index) => {
-    // strong elements
-    const strongArray = [
-    'iPhone 15 Pro',
-    'iPhone 15',
-    'MacBook Air',
-    ' ',
-    'Vision Pro',
-    'WATCH',
-    'iPad',
-    'Card',
-    'Trade In',
-    ]
-    text.firstElementChild.textContent = strongArray[index];
-
-    // h3 elements
-    const h3Array = ['Titanium. So strong. So light. So Pro.',
+// static data like text is kept here since its only applicable to this page
+let strongAndH3Array = [[
+  'iPhone 15 Pro',
+  'iPhone 15',
+  'MacBook Air',
+  ' ',
+  'Vision Pro',
+  'WATCH',
+  'iPad',
+  'Card',
+  'Trade In',
+], [
+  'Titanium. So strong. So light. So Pro.',
     'New Camera. New Design. Newphoria.',
     'Lean. Mean. M3 machine.',
     'Apple Worldwide Developers Conference Join us online June 10-14.',
@@ -80,11 +69,26 @@ textStrongArray.forEach((text, index) => {
     'Lovable. Drawable. Magical.',
     'Get up to 3% Daily Cash back with every purchase.',
     'Get $170-$630 in credit when you trade in iPhone 11 or higher.'
-    ]
-    for (let i = 0; i < h3SelectaArray.length; i++) {
-        h3SelectaArray[i].textContent = h3Array[i];
-    }
+]]
+
+// styling each strong element
+textStrongArray.forEach((text, index) => {
+    text.firstElementChild.textContent = strongAndH3Array[0][index];
 })
+// styling each h3 element
+h3SelectaArray.forEach((element, index) => {
+  element.textContent = strongAndH3Array[1][index];
+})
+
+// adding apple logo using external source
+strongCopiedArray.forEach((element, index) => {
+  for (let j = 0; j < strongCopiedArray.length; j++) {
+      if (index >= 4 && !element.querySelector('.apple-logo')) {
+          element.insertAdjacentHTML('afterBegin', appleLogo);
+      }
+  }
+});
+// marking the end of adding apple logo section..
 // marking the end of the grid section styling..
 
 // black background so do not have to change strong, h3, button background to black or white
@@ -101,25 +105,5 @@ excludedIndexes.forEach((element, i) => {
         buttonBuy[i].style.backgroundColor = 'white';
     }
 })
-// marking the end
-
-strongCopiedArray.forEach((element, index) => {
-    for (let j = 0; j < strongCopiedArray.length; j++) {
-        if (index >= 4 && !element.querySelector('.apple-logo')) {
-            element.insertAdjacentHTML('afterBegin', appleLogo)
-        }
-    }
-});
-
-const loginPageArray = [...document.getElementsByClassName('nav-items-component')];
-
-loginPageArray.forEach(login => {
-  login.lastElementChild.classList.add('right-group');
-})
-
-const rightGroupArray = [...document.getElementsByClassName('right-group')];
-
-rightGroupArray.forEach(right => {
-  right.children[1].setAttribute('href', "/signin.html")
-})
+// marking the end of button's background color styling..
 

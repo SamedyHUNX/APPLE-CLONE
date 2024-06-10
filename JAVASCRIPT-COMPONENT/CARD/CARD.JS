@@ -1,5 +1,7 @@
 'use strict';
 
+// card component main used for find-a-store pages..
+
 const storeCardsArray = [...document.querySelectorAll(".card")];
 
 storeCardsArray.forEach((card) => {

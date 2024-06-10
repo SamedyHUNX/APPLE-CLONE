@@ -68,4 +68,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 });
+
+// linking the bag logo to the signin page, so when a use clicks on the logo, it takes them to the sign-in page
+const loginPageArray = [...document.getElementsByClassName('nav-items-component')];
+loginPageArray.forEach(login => {
+  login.lastElementChild.classList.add('right-group');
+});
+
+// static coding is used since its only one element applied
+loginPageArray[0].lastElementChild.children[1].setAttribute('href', "./signin.html");s
+// marking the end of this adding section..
   
