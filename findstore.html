@@ -18,7 +18,7 @@
     <!-- homepage css -->
     <link href="./CSS/style.css" rel="stylesheet" />
     <!-- navbar css -->
-    <link href="./JAVASCRIPT-COMPONENT/NAVBAR/NavBar.css" rel="stylesheet" />
+    <link href="./JAVASCRIPT-COMPONENT/NAVBAR/NAVBAR.css" rel="stylesheet" />
     <!-- dropdown css -->
      <link href="./JAVASCRIPT-COMPONENT/NAVBAR/DROPDOWN/NAVBAR-DROPDOWN.css" rel="stylesheet">
     <!-- card css -->
@@ -29,13 +29,15 @@
     <script src="./static & json/hero-img-att.js"></script>
     <!-- submenu of each dropdown -->
     <script src="./static & json/submenu-elements.js"></script>
+    <!-- card src -->
+     <script src="./static & json/card-alt-img.js"></script>
     <!-- title -->
     <title>Apple Store - Find a Store</title>
   </head>
   <body>
     <!-- header injection from homepage -->
     <header class="findstore header">
-      <div class="findstore navbar"></div>
+      <nav class="findstore navbar"></nav>
     </header>
       <!-- dropdown of the nav -->
       <div class="dropdown-container">
@@ -43,33 +45,12 @@
       <!-- marking the end of the header and nav section -->
     <!-- search bar -->
     <div class="store-search-bar">
-      <div class="wrapper-wrapper">
-        <div id="wrapper-wrapper-1">
-          <a href="#">Find a Store</a>
-        </div>
-        <div class="input-search-bar">
-          <form>
-            <input
-              type="text"
-              id="email"
-              name="email"
-              placeholder="Search by location, ZIP, or store name"
-            />
-            <button onclick="submitForm()" type="submit">
-              <i class="ri-search-line"></i>
-            </button>
-          </form>
-        </div>
-        <div id="wrapper-wrapper-2" class="complete-store-list">
-          <a href="#">Complete store list ></a>
-        </div>
-      </div>
     </div>
-    <!-- marking the end of search bar section -->
+    <!-- marking the end od the search bar section -->
     <!-- empty div for spacing nothing much -->
     <div class="empty-div"></div>
     <!-- card roll section -->
-    <div class="store-in-us">
+    <section class="store-in-us">
       <div id="h2-holder">
         <h2>Stores in United States</h2>
       </div>
@@ -86,7 +67,8 @@
           <div id="apple-9" class="card"></div>
         </div>
       </div>
-    </div>
+    </section>
+    <!-- marking the end of the card roll section -->
     <section class="program-section">
       <div class="program-section-content">
         <div class="program-section-heading">
@@ -308,8 +290,10 @@
     <script src="./javascript/findstore.js"></script>
     <!-- homepage script -->
     <script src="./javascript/script.js"></script>
+    <!-- searchbar -->
+     <script src="./JAVASCRIPT-COMPONENT/SEARCHBAR/SEARCHBAR.js"></script>
     <!-- navbar js -->
-     <script src="./JAVASCRIPT-COMPONENT/NAVBAR/NavBar.js"></script>
+     <script src="./JAVASCRIPT-COMPONENT/NAVBAR/NAVBAR.js"></script>
     <!-- dropdown js -->
      <script src="./JAVASCRIPT-COMPONENT/NAVBAR/DROPDOWN/NAVBAR-DROPDOWN.js"></script>
     <!-- card js -->
