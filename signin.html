@@ -1,92 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts -->
+    <link
+      href="./assets/Fonts/sf-pro-display_regular,sf-pro-display_semibold,sf-pro-icons_light/fonts.css"
+      rel="stylesheet"
+    />
     <!-- css stylsheet -->
-    <link href="./sign-in-page/signin.css" rel="stylesheet"/>
+    <link href="./CSS/signin.css" rel="stylesheet" />
     <!-- icon link -->
     <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-    rel="stylesheet"/>
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <!-- homepage style sheet -->
-    <link href="./style.css" rel="stylesheet"/>
+    <link href="./CSS/style.css" rel="stylesheet" />
     <!-- navbar css -->
-    <link href="./JAVASCRIPT-COMPONENT/NAVBAR/NavBar.css" rel="stylesheet">
-    <link href="./JAVASCRIPT-COMPONENT/NAVBAR/DROPDOWN/NAVBAR-DROPDOWN.css" rel="stylesheet">
-    <link href="./findstore/findstore.css" rel="stylesheet">
-    <!-- fonts -->
-    <link href="./assets/Fonts/sf-pro-display_regular,sf-pro-display_semibold,sf-pro-icons_light/fonts.css" rel="stylesheet"/>
+    <link href="./JAVASCRIPT-COMPONENT/NAVBAR/NavBar.css" rel="stylesheet" />
+    <link
+      href="./JAVASCRIPT-COMPONENT/NAVBAR/DROPDOWN/NAVBAR-DROPDOWN.css"
+      rel="stylesheet"
+    />
+    <link href="./CSS/findstore.css" rel="stylesheet" />
+    <!-- hero img src and att -->
+    <script src="./static & json/hero-img-att.js"></script>
+    <!-- submenu of each dropdown -->
+    <script src="./static & json/submenu-elements.js"></script>
     <!-- title -->
     <title>Sign in - Secure Checkout</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- header and navigation bar -->
     <header class="header">
-        <nav class="navbar">
-        </nav>
+      <nav class="navbar"></nav>
     </header>
-        <div class="sign-in-section">
-            <div class="sign-in-section-top">
-                <h1 class="desktop-ele">Sign in for faster checkout.</h1>
-                <h1 class="mobile-ele">Sign in to Apple Store</h1>
-                <div class="input-wrapper">
-                    <h1 class="h1-within-input-wrapper">Sign in to Apple Store</h1>
-                    <form>
-                        <input type="text" id="email" name="email" placeholder="Email or Phone Number">
-                        <button onclick="submitForm()" type="submit"><i class="ri-arrow-right-circle-line"></i></button>
-                    </form>
-                    <div class="remember-me">
-                        <input type="checkbox" id="checkbox_id" name="checkbox_name" value="checkbox_value">
-                        <p>Remember me</p>
-                    </div>
-                </div>
-                <div class="forgot-password"><a href="#">Forgot password?</a></div>
-                <div class="final-part">
-                    <p>Don't have an Apple ID?</p>
-                    <a href="#">Create yours now.</a>
-                </div>
-            </div>
-            <div class="sign-in-section-below">
-                <div class="below-wrapper">
-                    <p>Need some help? <a href="#">Chat now</a> or call <a href="#">1-800-MY-APPLE</a>.</p>
-                </div>
-            </div>
+    <!-- dropdown of the nav -->
+    <div class="dropdown-container"></div>
+    <div class="sign-in-section">
+      <div class="sign-in-section-top">
+        <h1 class="desktop-ele">Sign in for faster checkout.</h1>
+        <h1 class="mobile-ele">Sign in to Apple Store</h1>
+        <div class="input-wrapper">
+          <h1 class="h1-within-input-wrapper">Sign in to Apple Store</h1>
+          <form>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Email or Phone Number"
+            />
+            <button onclick="submitForm()" type="submit">
+              <i class="ri-arrow-right-circle-line"></i>
+            </button>
+          </form>
+          <div class="remember-me">
+            <input
+              type="checkbox"
+              id="checkbox_id"
+              name="checkbox_name"
+              value="checkbox_value"
+            />
+            <p>Remember me</p>
+          </div>
         </div>
+        <div class="forgot-password"><a href="#">Forgot password?</a></div>
+        <div class="final-part">
+          <p>Don't have an Apple ID?</p>
+          <a href="#">Create yours now.</a>
+        </div>
+      </div>
+      <div class="sign-in-section-below">
+        <div class="below-wrapper">
+          <p>
+            Need some help? <a href="#">Chat now</a> or call
+            <a href="#">1-800-MY-APPLE</a>.
+          </p>
+        </div>
+      </div>
+    </div>
     <footer class="page-footer">
-        <div class="footer-top">
-            <p>The Apple Online Store users industry-standard encryption to protect the confidentiality
-                of the information you submit. Learn more about our <a href="#">Security Policy</a>.
-            </p>
-            <p>We approximate your location from your internet IP address by matching it to a geographic region
-                or from the location entered during your previous visit to Apple.
-            </p>
+      <div class="footer-top">
+        <p>
+          The Apple Online Store users industry-standard encryption to protect
+          the confidentiality of the information you submit. Learn more about
+          our <a href="#">Security Policy</a>.
+        </p>
+        <p>
+          We approximate your location from your internet IP address by matching
+          it to a geographic region or from the location entered during your
+          previous visit to Apple.
+        </p>
+      </div>
+      <hr />
+      <div class="footer-bottom">
+        <p id="p1">
+          More ways to shop:
+          <a href="/findstore/findstore.html">Find an Apple Store</a> or
+          <a href="#">other retailer</a> near you. Or call<a href="#"
+            >1-800-MY-APPLE</a
+          >.
+        </p>
+        <p id="p2">United States</p>
+        <div class="copyright">
+          <p>
+            Copyright <i class="ri-copyright-line"></i> 2024 Apple Inc. All
+            rights reserved.
+          </p>
+          <ul>
+            <a id="first-a" href="#">Privacy Policy</a>
+            <a class="mid-element" href="#">Terms of Use</a>
+            <a class="mid-element" href="#">Sales and Refunds</a>
+            <a class="mid-element" href="#">Legal</a>
+            <a href="#">Site Map</a>
+          </ul>
         </div>
-        <hr>
-        <div class="footer-bottom">
-            <p id="p1">More ways to shop: <a href="/findstore/findstore.html">Find an Apple Store</a> or <a href="#">other retailer</a> near you. Or call<a href="#">1-800-MY-APPLE</a>.</p>
-            <p id="p2">United States</p>
-            <div class="copyright">
-                <p>
-                    Copyright <i class="ri-copyright-line"></i> 2024 Apple Inc. All rights reserved.
-                </p>
-                <ul>
-                    <a id="first-a" href="#">Privacy Policy</a>
-                    <a class="mid-element" href="#">Terms of Use</a>
-                    <a class="mid-element" href="#">Sales and Refunds</a>
-                    <a class="mid-element" href="#">Legal</a>
-                    <a href="#">Site Map</a>
-                </ul>
-            </div>
-        </div>
+      </div>
     </footer>
     <!-- js file signin -->
-    <script src="./signin.js"></script>
+    <script src="./javascript/signin.js"></script>
     <!-- index html js -->
-    <script src="./slideshow.js"></script>
-    <script src="./script.js"></script>
+    <script src="./javascript/slideshow.js"></script>
+    <script src="./javascript/script.js"></script>
     <!-- navigation bar js -->
     <script src="./JAVASCRIPT-COMPONENT/NAVBAR/NavBar.js"></script>
     <script src="./JAVASCRIPT-COMPONENT/NAVBAR/DROPDOWN/NAVBAR-DROPDOWN.js"></script>
-    <script src="./findstore/findstore.js"></script>
-</body>
+    <script src="./javascript/findstore.js"></script>
+  </body>
 </html>
