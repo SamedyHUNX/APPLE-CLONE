@@ -3,26 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- iconremix -->
+        <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+        rel="stylesheet"
+      />
+      <!-- font -->
+      <link
+        href="./assets/Fonts/sf-pro-display_regular,sf-pro-display_semibold,sf-pro-icons_light/fonts.css"
+        rel="stylesheet"
+      />
     <!-- find a store css -->
-    <link href="./findstore/findstore.css" rel="stylesheet" />
-    <!-- iconremix -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <!-- font -->
-    <link
-      href="./assets/Fonts/sf-pro-display_regular,sf-pro-display_semibold,sf-pro-icons_light/fonts.css"
-      rel="stylesheet"
-    />
+    <link href="./CSS/findstore.css" rel="stylesheet" />
     <!-- homepage css -->
-    <link href="./style.css" rel="stylesheet" />
+    <link href="./CSS/style.css" rel="stylesheet" />
     <!-- navbar css -->
     <link href="./JAVASCRIPT-COMPONENT/NAVBAR/NavBar.css" rel="stylesheet" />
-    <!-- footer css -->
-    <link href="./JAVASCRIPT-COMPONENT/FOOTER/FOOTER.css" rel="stylesheet" />
+    <!-- dropdown css -->
+     <link href="./JAVASCRIPT-COMPONENT/NAVBAR/DROPDOWN/NAVBAR-DROPDOWN.css" rel="stylesheet">
     <!-- card css -->
     <link href="./JAVASCRIPT-COMPONENT/CARD/CARD.css" rel="stylesheet" />
+        <!-- footer css -->
+        <link href="./JAVASCRIPT-COMPONENT/FOOTER/FOOTER.css" rel="stylesheet" />
+    <!-- hero img src and att -->
+    <script src="./static & json/hero-img-att.js"></script>
+    <!-- submenu of each dropdown -->
+    <script src="./static & json/submenu-elements.js"></script>
     <!-- title -->
     <title>Apple Store - Find a Store</title>
   </head>
@@ -31,9 +37,10 @@
     <header class="findstore header">
       <div class="findstore navbar"></div>
     </header>
-        <!-- dropdown of the nav -->
-        <div class="dropdown-container">
-        </div>
+      <!-- dropdown of the nav -->
+      <div class="dropdown-container">
+      </div>
+      <!-- marking the end of the header and nav section -->
     <!-- search bar -->
     <div class="store-search-bar">
       <div class="wrapper-wrapper">
@@ -296,17 +303,19 @@
         </div>
       </section>
     <footer class="footer"></footer>
-    <script src="./findstore/findstore.js"></script>
+    <!-- marking the end of footer section -->
+     <!-- javascript scripts -->
+    <script src="./javascript/findstore.js"></script>
     <!-- homepage script -->
-    <script src="./script.js"></script>
-    <!-- addtional homepage script -->
-    <script src="./slideshow.js"></script>
+    <script src="./javascript/script.js"></script>
+    <!-- navbar js -->
+     <script src="./JAVASCRIPT-COMPONENT/NAVBAR/NavBar.js"></script>
+    <!-- dropdown js -->
+     <script src="./JAVASCRIPT-COMPONENT/NAVBAR/DROPDOWN/NAVBAR-DROPDOWN.js"></script>
     <!-- card js -->
     <script src="./JAVASCRIPT-COMPONENT/CARD/CARD.js"></script>
-    <!-- navigation bar -->
-    <script src="./JAVASCRIPT-COMPONENT/NAVBAR/NavBar.js"></script>
-    <!-- dropdown js -->
-    <script src="./JAVASCRIPT-COMPONENT/NAVBAR/DROPDOWN/NAVBAR-DROPDOWN.js"></script>
+      <!-- addtional homepage script -->
+      <script src="./javascript/slideshow.js"></script>
     <!-- footer js -->
     <script src="./JAVASCRIPT-COMPONENT/FOOTER/FOOTER.js"></script>
   </body>
