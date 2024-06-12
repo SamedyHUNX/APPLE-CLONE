@@ -1,14 +1,15 @@
 "use strict";
 
-const sections = document.getElementsByClassName("hero");
+// hero common component
+const heroSectionArray = Array.from(document.getElementsByClassName("hero"));
 
-for (let i = 0; i < sections.length; i++) {
-  const section = sections[i];
+for (let i = 0; i < heroSectionArray.length; i++) {
+  const section = heroSectionArray[i];
   section.innerHTML = `
   <img
     class="hero-img"
     src="#"
-    alt="iPhone 15 Pro"
+    alt="#"
   />
   <div class="text-over-hero-img">
     <strong>#</strong>
@@ -20,3 +21,4 @@ for (let i = 0; i < sections.length; i++) {
   </div>
   `;
 }
+// MARKING THE END OF THIS INJECTION SECTION

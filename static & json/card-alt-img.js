@@ -1,3 +1,5 @@
+"use strict";
+
 // changing card attributes
 const cardSourcesArray = [
   "./assets/images/FINDSTORE PAGE/Carousel/Apple Aventura.jpg",

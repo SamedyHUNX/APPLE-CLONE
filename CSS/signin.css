@@ -1,0 +1,562 @@
+/* some general styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  scrollbar-width: none;
+  overflow-y: scroll;
+  min-width: 300px;
+}
+
+.mobile-ele {
+  display: none;
+}
+/* MARKING THE END OF THE WHOILE GERNERAL STYLING */
+
+/* sign in box */
+.sign-in-section {
+  display: flex;
+  flex-direction: column;
+  top: 6%;
+  position: relative;
+  width: 61.25rem;
+  height: 700px;
+  align-items: center;
+  justify-content: baseline;
+  margin: auto;
+}
+
+.sign-in-section .sign-in-section-top {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+.sign-in-section .sign-in-section-top .desktop-ele {
+  width: 100%;
+  padding: 34px 0 0;
+  font-size: 40px;
+  font-family: "SF Pro Display Semibold", sans-serif;
+  font-weight: 550;
+}
+/* MARKING THE END OF THE WHOLE SIGN IN BOX */
+
+/* input section */
+.input-wrapper {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* doing */
+.h1-within-input-wrapper {
+  width: 100%;
+  text-align: center;
+  margin: 5px 130px 13px;
+  font-family: "SF Pro Display Light", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 34px 0 0;
+  opacity: 0.85;
+}
+
+.input-wrapper form {
+  height: 90%;
+  display: inline-block;
+  position: relative;
+  margin: 40px 0px 0px;
+}
+
+.input-wrapper form input {
+  width: 500px;
+  height: 66px;
+  border-radius: 12px;
+  border: 1.5px solid #494949;
+  background-color: #ffffffcc;
+}
+
+input[type="text"] {
+  padding: 18px 43px 18px 16px;
+  text-align: left;
+  font-family: "SF Pro Display Light", sans-serif;
+  font-size: 23px;
+  font-weight: 350;
+}
+
+.input-wrapper form button {
+  position: absolute;
+  right: 3%;
+  top: 6%;
+  font-size: 40px;
+  border: none;
+  background-color: #ffffffcc;
+  font-weight: 200;
+  opacity: 0.3;
+}
+
+/* remember me */
+.remember-me {
+  font-size: 19px;
+  font-family: "SF Pro Display Bold";
+  width: 100%;
+  height: 26px;
+  margin: 18px 0 16px;
+  padding: 0px 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.remember-me p {
+  padding: 1px 0px 0px 18px;
+  white-space: nowrap;
+  opacity: 0.52;
+  letter-spacing: -0.25px;
+}
+
+/* forgot password */
+.forgot-password {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30px;
+  padding: 0px 0px 12px;
+  white-space: nowrap;
+}
+
+.forgot-password a {
+  font-size: 17px;
+  letter-spacing: -0.25px;
+  font-family: "SF Pro Display Light", sans-serif;
+  text-decoration: underline;
+  color: #0066cc;
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+/* dont have an id or something part */
+.final-part {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-family: "SF Pro Display Semibold";
+  color: #494949;
+  letter-spacing: -0.25px;
+  opacity: 0.85;
+  font-weight: 100;
+  white-space: nowrap;
+  padding: 0 0 48px;
+}
+
+.final-part a {
+  padding-left: 6px;
+  text-decoration: none;
+  color: #0066cc;
+}
+
+/* need some help and something */
+.sign-in-section-below {
+  width: 100%;
+  height: 70px;
+  font-size: 17px;
+  font-family: "SF Pro Display Semibold", sans-serif;
+  font-weight: 400;
+  opacity: 0.85;
+  color: #1d1d1f;
+  border-top: 1.5px solid #d3d3d3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-in-section-below .below-wrapper {
+  width: 1080px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 auto;
+  padding: 21px 0px;
+}
+
+.sign-in-section-below p a {
+  color: #0066cc;
+  opacity: 1;
+  font-weight: 399;
+}
+/* MARKING THE END OF THE INPUT SECTION */
+
+/* footer of the page */
+.page-footer {
+  height: max-content;
+  width: 61.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 6%;
+  font-size: 12px;
+  font-family: "SF Pro Display Semibold", sans-serif;
+  font-weight: 100;
+  opacity: 0.65;
+  letter-spacing: -0.025px;
+  background-color: rgb(231, 230, 230);
+  margin: auto;
+}
+
+.footer-top,
+.footer-bottom {
+  width: 61.25rem;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.footer-top {
+  height: auto;
+  margin: 9.6px 0px 0px;
+  padding: 17px 0px 11px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.footer-top p {
+  height: auto;
+  text-align: justify;
+}
+
+.footer-top p a {
+  color: #1d1d1f;
+  opacity: 1;
+  font-weight: 400;
+}
+
+.footer-bottom {
+  min-height: auto;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  padding: 7px 0px 10px;
+}
+
+.footer-bottom #p1 {
+  padding: 0px 0px 10px;
+}
+
+.footer-bottom #p1 a {
+  color: #0066cc;
+  font-weight: 399;
+  opacity: 1;
+}
+
+.footer-bottom #p2 {
+  width: 100%;
+  height: 20px;
+  margin: 5px 0px 0px;
+  padding: 4px 0px 0px;
+}
+
+.copyright {
+  min-height: 42px;
+  max-height: 80px;
+  width: 100%;
+  height: 8vh;
+  padding: 12px 0px 0px;
+}
+
+.copyright p {
+  margin: 5px 0 0;
+}
+
+.copyright p a {
+  color: #1d1d1f;
+}
+
+.copyright ul {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.copyright ul a {
+  padding: 0px 9px;
+  text-decoration: none;
+  color: #1d1d1f;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.copyright ul #first-a {
+  padding: 0 9px 0 0;
+}
+
+.copyright ul .mid-element {
+  border-left: 1px solid #0000008e;
+  border-right: 1px solid #0000008e;
+}
+/* MARKING THE END OF THE INPUT STYLING */
+
+/* media for smaller screen */
+@media screen and (max-width: 1030px) {
+  body,
+  html {
+    overflow-y: scroll;
+  }
+  .sign-in-section {
+    width: 100%;
+    height: 470px;
+  }
+  .sign-in-section .sign-in-section-top {
+    margin: 0 18px 0 18px;
+    width: 70vw;
+    height: 430px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sign-in-section .sign-in-section-top h1 {
+    width: 100%;
+    height: 36px;
+    text-align: center;
+    margin: 5px 0 20px;
+    font-family: "SF Pro Display Light", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -0.216px;
+    max-width: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+  }
+
+  h1.h1-within-input-wrapper {
+    display: none !important;
+  }
+
+  .sign-in-section-top .desktop-ele {
+    display: none !important;
+  }
+
+  /* input */
+  .input-wrapper {
+    height: 341px;
+    margin: 0px 40px;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+
+  .input-wrapper form {
+    margin: 0;
+    height: 56px;
+  }
+
+  .input-wrapper form input {
+    width: 100%;
+    height: 56px;
+  }
+
+  input[type="text"] {
+    padding: 18px 43px 16px 16px;
+    font-size: 17px;
+  }
+
+  .input-wrapper form button {
+    font-size: 34px;
+    top: 19%;
+  }
+
+  .remember-me {
+    font-size: 18px;
+    height: 19px;
+    padding: 0px 0px 20px;
+  }
+
+  .remember-me p {
+    padding: 1px 0px 0px 13px;
+  }
+
+  /* forgot password */
+  .forgot-password {
+    height: 29px;
+    padding: 0px 0px 13px;
+  }
+
+  .forgot-password a {
+    font-size: 15px;
+  }
+
+  /* final part dont have an apple id... */
+
+  /* final div */
+  .sign-in-section-below {
+    height: 93px;
+    flex-wrap: wrap;
+  }
+
+  .sign-in-section-below .below-wrapper {
+    margin: 0 2.5vw;
+  }
+
+  /* footer of the page */
+
+  .page-footer {
+    padding: 0px 2.5vw;
+    top: 9%;
+  }
+
+  .footer-top,
+  .footer-bottom {
+    width: 100%;
+  }
+
+  .footer-top {
+    padding: 7px 0px 11px;
+  }
+
+  .copyright ul {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1030px) {
+  body,
+  html {
+    overflow-y: scroll;
+  }
+  .sign-in-section {
+    height: 470px;
+  }
+  .sign-in-section .sign-in-section-top {
+    margin: 0 18px 0 18px;
+    width: 70vw;
+    height: 430px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sign-in-section .sign-in-section-top h1 {
+    width: 100%;
+    height: 36px;
+    text-align: center;
+    margin: 5px 0 20px;
+    font-family: "SF Pro Display Light", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -0.216px;
+    max-width: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+  }
+
+  h1.h1-within-input-wrapper {
+    display: none !important;
+  }
+
+  .sign-in-section-top .desktop-ele {
+    display: none !important;
+  }
+
+  /* input */
+  .input-wrapper {
+    height: 341px;
+    margin: 0px 40px;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+
+  .input-wrapper form {
+    margin: 0;
+    height: 56px;
+  }
+
+  .input-wrapper form input {
+    width: 100%;
+    height: 56px;
+  }
+
+  input[type="text"] {
+    padding: 18px 43px 16px 16px;
+    font-size: 17px;
+  }
+
+  .input-wrapper form button {
+    font-size: 34px;
+    top: 19%;
+  }
+
+  .remember-me {
+    font-size: 18px;
+    height: 19px;
+    padding: 0px 0px 20px;
+  }
+
+  .remember-me p {
+    padding: 1px 0px 0px 13px;
+  }
+
+  /* forgot password */
+  .forgot-password {
+    height: 29px;
+    padding: 0px 0px 13px;
+  }
+
+  .forgot-password a {
+    font-size: 15px;
+  }
+
+  /* final part dont have an apple id... */
+
+  /* final div */
+  .sign-in-section-below {
+    height: 93px;
+    flex-wrap: wrap;
+  }
+
+  .sign-in-section-below .below-wrapper {
+    margin: 0 2.5vw;
+  }
+
+  /* footer of the page */
+
+  .page-footer {
+    width: 100%;
+    padding: 0px 2.5vw;
+    top: 9%;
+  }
+
+  .footer-top,
+  .footer-bottom {
+    width: 100%;
+  }
+
+  .footer-top {
+    padding: 7px 0px 11px;
+  }
+
+  .copyright ul {
+    flex-wrap: wrap;
+  }
+}
+/* MARKING THE END FOR THIS WHOLE PAGE STYLING */

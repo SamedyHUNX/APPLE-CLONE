@@ -1,3 +1,4 @@
+/* slideshow css */
 @media screen and (max-width: 940px) {
     /* slideshow for mobile */
     .my-slider {
@@ -20,3 +21,4 @@
         object-fit: contain;
     }
 }
+/* MARKING THE END OF THE SLIDESHOW SECTION */

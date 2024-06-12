@@ -16,14 +16,12 @@ html {
   margin: auto;
 }
 
-/* **************************************** */
-
 #menu-logo {
   display: none;
 }
+/* MARKING THE END OF THE GENERAL STYLING SECTION */
 
 /* grid section */
-
 .grid-promo-section {
   display: grid;
   position: relative;
@@ -59,6 +57,7 @@ html {
 .grid-promo-section #grid-2 .text-over-hero-img {
   top: 80%;
 }
+/* MARKING THE END OF THE WHOLE GRID SECTION */
 
 /* slider images */
 .my-slider {
@@ -137,9 +136,9 @@ html {
   background-color: #000;
   opacity: 1;
 }
+/* MARKING THE END */
 
 /* carousel */
-
 .my-slider.carousel-slider {
   width: 100%;
   height: 14.75rem;
@@ -196,6 +195,7 @@ html {
 #pause.hidden {
   display: none;
 }
+/* MARKING THE END OF THE SLIDER SECTION */
 
 /* all images */
 .hero-section.desktop-img {
@@ -212,6 +212,7 @@ html {
   display: none;
 }
 
+/* media for mobile */
 @media screen and (max-width: 940px) {
   /* grid section */
   .grid-promo-section {
@@ -246,3 +247,4 @@ html {
     object-fit: fill;
   }
 }
+/* MARKING THE END OF THE WHOLE PAGE */

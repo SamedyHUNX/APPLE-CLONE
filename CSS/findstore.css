@@ -1,3 +1,4 @@
+/* general styling */
 * {
   padding: 0;
   margin: 0;
@@ -17,6 +18,7 @@ html {
   margin: auto;
   background-color: rgb(230, 230, 230);
 }
+/* MARKING THE END OF THE GERNERAL STYLING */
 
 /* navbar adjustment for this specific page */
 .findstore.header {
@@ -33,8 +35,7 @@ html {
 .findstore.navbar ul li a {
   color: black;
 }
-
-.findstore.header .findstore.navbar .nav
+/* MARKING THE END OF NAVBAR ADJUSTMENT */
 
 /* styling search section and search bar */
 .store-search-bar {
@@ -126,16 +127,16 @@ html {
   color: #0066cc;
   text-decoration: none;
 }
-/* marking the end of the search bar */
-/* empty div used for spacing */
+/* MARKING THE END OF THE SEARCHBAR STYLING */
 
+/* empty div used for spacing */
 .empty-div {
   width: 100%;
   height: 2.75rem;
 }
+/* MARKING THE END OF THE EMPTY DIV STYLING */
 
-/* CAROUSEL SLIDER */
-
+/* carousel slider */
 .store-in-us {
   position: relative;
   width: 100%;
@@ -175,9 +176,9 @@ html {
   gap: 2.8rem;
   height: 22.1875rem;
 }
+/* MARKING THE END OF THE CARD STYLING SECTION */
 
 /* program section */
-
 section.program-section {
   width: 100%;
   height: fit-content;
@@ -293,6 +294,7 @@ section.program-section {
 .img-holder img {
   border-radius: 0 10px 10px 0;
 }
+/* MARKING THE END OF THE PROGRAM CARD SECTION */
 
 /* grid promo section */
 .grid-section-promo {
@@ -462,9 +464,9 @@ section.program-section {
   min-width: 100%;
   object-fit: fill;
 }
+/* MARKING THE END OF THNE PROGRAM SECTION */
 
 /* footer find store */
-
 .footer-find-store {
   position: relative;
 }
@@ -476,6 +478,7 @@ section.program-section {
 .footer-text-container li .empty-div {
   height: 1rem;
 }
+/* MARKING THE END OF THE FOOTER FINDSTORE */
 
 /* mobile screen */
 @media screen and (max-width: 940px) {
@@ -863,3 +866,5 @@ section.program-section {
     margin: 6px 0 2px;
   }
 }
+
+/* MARKING THE END OF THE WHOLE BODY */

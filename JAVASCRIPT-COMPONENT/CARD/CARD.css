@@ -1,3 +1,4 @@
+/* card styling */
 .content-wrapper .card .apple-card {
   display: flex;
   flex-direction: column;
@@ -43,3 +44,4 @@
   align-items: flex-end;
   justify-content: flex-start;
 }
+/* MARKING THE END OF CARD STYLING */
