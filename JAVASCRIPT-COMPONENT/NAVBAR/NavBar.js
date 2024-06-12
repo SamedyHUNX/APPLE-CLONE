@@ -2,7 +2,6 @@
 
 const navBarArray = [...document.getElementsByClassName("navbar")];
 
-(function() {
 navBarArray.forEach(navBar => {
     navBar.innerHTML = `
     <ul class="nav-items-component">
@@ -29,8 +28,7 @@ navBarArray.forEach(navBar => {
         </li>
     </ul>
 `;
-})
-})();
+});
 
 // adding text to each navigation element for all the navbar whereever the class is used
 const desktopGroupClassArray = Array.from(document.getElementsByClassName('desktop-group'));
@@ -38,17 +36,13 @@ const desktopGroupArray = Array.from(document.querySelectorAll('.desktop-group a
 const dropDownContainerArray = Array.from(document.getElementsByClassName('dropdown-container'));
 const aTextContent = ['Store', 'Mac', 'iPad', 'iPhone', 'Watch', 'Vision', 'AirPods', 'TV & Home', 'Entertainment', 'Acessories', 'Support'];
 
-(function() {
 desktopGroupArray.forEach((a, index) => {
     a.textContent = aTextContent[index];
-})
-})();
+});
 
 // dynamically add the dropdown container based on the static array aTextContent..
-(function() {
-    for (let i = 0; i < aTextContent.length; i++) {
-        const dropdown = document.createElement('div');
-        dropdown.className = 'dropdown hidden';
-        dropDownContainerArray[0].appendChild(dropdown);
-    }
-  })();
+for (let i = 0; i < aTextContent.length; i++) {
+    const dropdown = document.createElement('div');
+    dropdown.className = 'dropdown hidden';
+    dropDownContainerArray[0].appendChild(dropdown);
+};
