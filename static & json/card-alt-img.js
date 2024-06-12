@@ -1,6 +1,7 @@
 "use strict";
 
 // changing card attributes
+// specifically for findstore page.
 const cardSourcesArray = [
   "./assets/images/FINDSTORE PAGE/Carousel/Apple Aventura.jpg",
   "./assets/images/FINDSTORE PAGE/Carousel/Apple Briarwood.jpg",
@@ -48,3 +49,4 @@ const timeClosesArray = [
   "Open until 8:00 p.m.",
   "Open until 8:00 p.m.",
 ];
+// MARKING THE END OF THE PAGE

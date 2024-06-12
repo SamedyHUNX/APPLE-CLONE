@@ -12,3 +12,4 @@ const heroImgAttributeArray = [
     [['src', "./assets/images/Promo/Card/tile__cauwwcyyn9hy_large_2x.jpg"], ['alt', 'iCard'], ['src', "./assets/images/Promo/Card/tile__cauwwcyyn9hy_small_2x.jpg"]],
     [['src', "./assets/images/Promo/Trade in/promo_iphone_tradein__bugw15ka691e_large_2x.jpg"], ['alt', 'Apple Trade-in'], ['src', "./assets/images/Promo/Trade in/promo_iphone_tradein__bugw15ka691e_small_2x.jpg"]]
   ];
+  // MARKING THE END OF THE PAGE
