@@ -18,38 +18,17 @@ html {
   display: none;
 }
 
-/* navigation bar */
-
-/* .nav-sign-in {
-    background-color: white !important;
-}
-
-.nav-sign-in a i, .nav-sign-in .nav-logo a {
-    color: black !important;
-    text-decoration: none;
-    opacity: 0.85;
-}
-
-.nav-sign-in a i:hover, .nav-sign-in .nav-logo a:hover,
-.nav-sign-in .ul-container .nav-items .navigation-item a:hover {
-    opacity: 1;
-}
-
-.nav-sign-in .ul-container .nav-items .navigation-item a {
-    color: black;
-    opacity: 0.75;
-} */
-
 /* sign in box */
 .sign-in-section {
   display: flex;
   flex-direction: column;
   top: 6%;
   position: relative;
-  width: 100%;
+  width: 61.25rem;
   height: 700px;
   align-items: center;
   justify-content: baseline;
+  margin: auto;
 }
 
 .sign-in-section .sign-in-section-top {
@@ -57,11 +36,12 @@ html {
   flex-direction: column;
   align-items: left;
   justify-content: flex-start;
-  width: 1100px;
+  width: 100%;
   height: 100%;
 }
 
 .sign-in-section .sign-in-section-top .desktop-ele {
+  width: 100%;
   padding: 34px 0 0;
   font-size: 40px;
   font-family: "SF Pro Display Semibold", sans-serif;
