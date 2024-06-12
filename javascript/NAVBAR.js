@@ -1,5 +1,7 @@
 "use strict";
 
+// navbar injection
+// its actually a common component (capitalized) but hosting server cant find the path (still figuring out) so i moved it here.
 const navBarArray = [...document.getElementsByClassName("navbar")];
 
 navBarArray.forEach(navBar => {
@@ -29,6 +31,7 @@ navBarArray.forEach(navBar => {
     </ul>
 `;
 });
+// MARKING THE END OF THIS INJECTION
 
 // adding text to each navigation element for all the navbar whereever the class is used
 const desktopGroupClassArray = Array.from(document.getElementsByClassName('desktop-group'));
@@ -46,3 +49,4 @@ for (let i = 0; i < aTextContent.length; i++) {
     dropdown.className = 'dropdown hidden';
     dropDownContainerArray[0].appendChild(dropdown);
 };
+// MARKING THE END

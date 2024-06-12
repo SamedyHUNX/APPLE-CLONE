@@ -1,3 +1,4 @@
+// findstore page javascrript
 // apple card images
 const appleCardsArray = [...document.querySelectorAll(".apple-card img")];
 const cardContentsH2Array = [...document.querySelectorAll(".card-content h2")];
@@ -15,3 +16,4 @@ for (let i = 0; i < appleCardsArray.length; i++) {
   cardContentAddressesArray[i].textContent = addressesArray[i];
   cardContentSpansArray[i].textContent = timeClosesArray[i];
 };
+// MARKING THE END OF FINDSTORE JAVASCRIPT SECTION

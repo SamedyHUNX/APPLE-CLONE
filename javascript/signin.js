@@ -34,8 +34,4 @@ pContentArray.forEach((item, index) => {
         footer.appendChild(sectionDiv.cloneNode(true));
     })
 });
-
-// // Append the parent container the footer
-// footerArray.forEach(footer => {
-//     footer.appendChild(footer);
-// })
+// MARKING THE END

@@ -65,3 +65,4 @@ function handlePlayClick() {
 
 pause.addEventListener("click", handlePauseClick);
 play.addEventListener("click", handlePlayClick);
+// MARKING THE END

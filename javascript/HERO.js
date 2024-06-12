@@ -1,5 +1,6 @@
 "use strict";
 
+// hero common component
 const heroSectionArray = Array.from(document.getElementsByClassName("hero"));
 
 for (let i = 0; i < heroSectionArray.length; i++) {
@@ -20,3 +21,4 @@ for (let i = 0; i < heroSectionArray.length; i++) {
   </div>
   `;
 }
+// MARKING THE END OF THIS INJECTION SECTION

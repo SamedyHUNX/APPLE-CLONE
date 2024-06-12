@@ -1,3 +1,5 @@
+// card injection
+// note: its a common component but hosting site cant recognixe it so i moved it here
 const storeCardsArray = [...document.querySelectorAll(".card")];
 
 storeCardsArray.forEach((card) => {
@@ -15,3 +17,4 @@ storeCardsArray.forEach((card) => {
         <span>#</span>
         </div>`;
 });
+// MARKING THE END OF THE INJECTION SECTION

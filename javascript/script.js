@@ -28,7 +28,7 @@ function updateHeroImage() {
 updateHeroImage();
 
 window.addEventListener("resize", updateHeroImage);
-// marking the end of hero component styling..
+// MARKING THE END OF THNE HERO IMAGE STYLING
 
 // button deletion for grid section
 const buttonLearnMore = [...document.getElementsByClassName("learn-more")];
@@ -41,7 +41,7 @@ buttonLearnMore[8].style.color = "white";
 
 buttonBuy[3].remove();
 buttonBuy[8].remove();
-// marking the end of button deletion for the grid section..
+// MARKING THE END OF BUTTON DELETION
 
 // text over hero image strong
 const textStrongArray = [
