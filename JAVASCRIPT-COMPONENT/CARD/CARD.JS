@@ -1,5 +1,3 @@
-'use strict';
-
 const storeCardsArray = [...document.querySelectorAll(".card")];
 
 storeCardsArray.forEach((card) => {
