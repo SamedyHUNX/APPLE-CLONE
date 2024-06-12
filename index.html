@@ -1,111 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- external icon source -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <!-- fonts -->
-    <link
-      href="./assets/Fonts/sf-pro-display_regular,sf-pro-display_semibold,sf-pro-icons_light/fonts.css"
-      rel="stylesheet"
-    />
-    <!-- css -->
-    <link rel="stylesheet" href="./CSS/style.css" />
-    <!-- navbar css -->
-    <link href="./JAVASCRIPT-COMPONENT/NAVBAR/NAVBAR.css" rel="stylesheet" />
-    <!-- navbar dropdown css -->
-    <link
-      href="./JAVASCRIPT-COMPONENT/NAVBAR/DROPDOWN/NAVBAR-DROPDOWN.css"
-      rel="stylesheet"
-    />
-    <!-- hero section css -->
-    <link rel="stylesheet" href="./JAVASCRIPT-COMPONENT/HERO/HERO.css" />
-    <!-- slideshow css -->
-    <link
-      rel="stylesheet"
-      href="./JAVASCRIPT-COMPONENT/SLIDESHOW/SLIDESHOW.css"
-    />
-    <!-- footer css -->
-    <link rel="stylesheet" href="./JAVASCRIPT-COMPONENT/FOOTER/FOOTER.css" />
-    <!-- title -->
-    <title>Apple</title>
-  </head>
-  <body>
-    <!-- navigation injection -->
-    <header class="header">
-      <nav class="navbar"></nav>
-    </header>
-    <!-- dropdown of the nav -->
-    <div class="dropdown-container"></div>
-    <!-- marking the end of the dropdown section -->
-    <section class="section">
-      <!-- iphone 15 pro -->
-      <div class="hero"></div>
-      <!-- iphone 15 -->
-      <div class="hero"></div>
-      <!-- macbook air -->
-      <div class="hero"></div>
-      <!-- promo section grid -->
-      <div class="grid-promo-section">
-        <!-- grid1 : wwdc 2024 -->
-        <div id="grid-1" class="hero grid-hero"></div>
-        <!-- grid2 : apple vision -->
-        <div id="grid-2" class="hero grid-hero"></div>
-        <!-- grid3 : apple smartwatch -->
-        <div class="hero grid-hero"></div>
-        <!-- grid4: ipad -->
-        <!-- macbook air section layout is used because the two are idenfical -->
-        <div class="hero grid-hero"></div>
-        <!-- grid5: apple card -->
-        <div class="hero grid-hero"></div>
-        <!-- grid6: trade in -->
-        <div class="hero grid-hero"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- external icon source -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <!-- fonts -->
+  <link href="./assets/Fonts/sf-pro-display_regular,sf-pro-display_semibold,sf-pro-icons_light/fonts.css" rel="stylesheet" />
+  <!-- css -->
+  <link rel="stylesheet" href="./CSS/style.css" />
+  <!-- navbar css -->
+  <link href="./JAVASCRIPT-COMPONENT/NAVBAR/NAVBAR.css" rel="stylesheet" />
+  <!-- navbar dropdown css -->
+  <link href="./JAVASCRIPT-COMPONENT/NAVBAR/DROPDOWN/NAVBAR-DROPDOWN.css" rel="stylesheet" />
+  <!-- hero section css -->
+  <link rel="stylesheet" href="./JAVASCRIPT-COMPONENT/HERO/HERO.css" />
+  <!-- slideshow css -->
+  <link rel="stylesheet" href="./JAVASCRIPT-COMPONENT/SLIDESHOW/SLIDESHOW.css" />
+  <!-- footer css -->
+  <link rel="stylesheet" href="./JAVASCRIPT-COMPONENT/FOOTER/FOOTER.css" />
+  <!-- hero img src and att -->
+  <script src="./static%20&%20json/hero-img-att.js"></script>
+  <!-- submenu of each dropdown -->
+  <script src="./static%20&%20json/submenu-elements.js"></script>
+  <!-- hero attribute array exclusive for this page -->
+  <script src="./static%20&%20json/hero-attribute-array.js"></script>
+  <!-- slidershow img array exclusive for this page -->
+  <script src="./static%20&%20json/slider-img-array.js"></script>
+  <!-- title -->
+  <title>Apple</title>
+</head>
+<body>
+  <!-- navigation injection -->
+  <header class="header">
+    <nav class="navbar"></nav>
+  </header>
+  <!-- dropdown of the nav -->
+  <div class="dropdown-container"></div>
+  <!-- marking the end of the dropdown section -->
+  <section class="section">
+    <!-- iphone 15 pro -->
+    <div class="hero"></div>
+    <!-- iphone 15 -->
+    <div class="hero"></div>
+    <!-- macbook air -->
+    <div class="hero"></div>
+    <!-- promo section grid -->
+    <div class="grid-promo-section">
+      <!-- grid1 : wwdc 2024 -->
+      <div id="grid-1" class="hero grid-hero"></div>
+      <!-- grid2 : apple vision -->
+      <div id="grid-2" class="hero grid-hero"></div>
+      <!-- grid3 : apple smartwatch -->
+      <div class="hero grid-hero"></div>
+      <!-- grid4: ipad -->
+      <!-- macbook air section layout is used because the two are idenfical -->
+      <div class="hero grid-hero"></div>
+      <!-- grid5: apple card -->
+      <div class="hero grid-hero"></div>
+      <!-- grid6: trade in -->
+      <div class="hero grid-hero"></div>
+    </div>
+    <!-- image slideshow-->
+    <div class="my-slider slideshow"></div>
+    <!-- carousel -->
+    <div class="my-slider carousel-slider"></div>
+    <!-- pause and play -->
+    <div class="pause-play">
+      <div class="pause-play-wrapper">
+        <i id="pause" class="ri-pause-circle-fill pause-play"></i>
+        <i id="play" class="ri-play-circle-fill hidden pause-play"></i>
       </div>
-      <!-- image slideshow-->
-      <div class="my-slider slideshow"></div>
-      <!-- carousel -->
-      <div class="my-slider carousel-slider"></div>
-      <!-- pause and play -->
-      <div class="pause-play">
-        <div class="pause-play-wrapper">
-          <i id="pause" class="ri-pause-circle-fill pause-play"></i>
-          <i id="play" class="ri-play-circle-fill hidden pause-play"></i>
-        </div>
-      </div>
-      <!-- marking the end of the second carousel -->
-    </section>
-    <footer class="footer"></footer>
-    <!-- marking the end of the footer section -->
-    <!-- marking the end of the whole body section -->
-    <!-- hero img src and att -->
-    <script src="./static & json/hero-img-att.js"></script>
-    <!-- submenu of each dropdown -->
-    <script src="./static & json/submenu-elements.js"></script>
-    <!-- hero attribute array exclusive for this page -->
-    <script src="./static & json/hero-attribute-array.js"></script>
-    <!-- slidershow img array exclusive for this page -->
-    <script src="./static & json/slider-img-array.js"></script>
-    <!-- navbar javascript component -->
-    <script src="./JAVASCRIPT-COMPONENT/NAVBAR/NAVBAR.js"></script>
-    <!-- navbar dropdown -->
-    <script src="./JAVASCRIPT-COMPONENT/NAVBAR/DROPDOWN/NAVBAR-DROPDOWN.js"></script>
-    <!-- hero javascript component -->
-    <script src="./JAVASCRIPT-COMPONENT/HERO/HERO.js"></script>
-    <!-- javascript file -->
-    <script src="./javascript/script.js"></script>
-    <!-- text over hero image -->
-    <script src="./JAVASCRIPT-COMPONENT/HERO/TEXT.js"></script>
-    <!-- slideshow js -->
-    <script src="./JAVASCRIPT-COMPONENT/SLIDESHOW/SLIDESHOW.js"></script>
-    <!-- slider js-->
-    <script src="./JAVASCRIPT-COMPONENT/SLIDER/SLIDER.js"></script>
-    <!-- index slideshow js -->
-    <script src="./javascript/slideshow.js"></script>
-    <!-- footer javascript -->
-    <script src="./JAVASCRIPT-COMPONENT/FOOTER/FOOTER.js"></script>
-  </body>
+    </div>
+    <!-- marking the end of the second carousel -->
+  </section>
+  <footer class="footer"></footer>
+  <!-- marking the end of the footer section -->
+  <!-- marking the end of the whole body section -->
+  <!-- navbar javascript component -->
+  <script src="./JAVASCRIPT-COMPONENT/NAVBAR/NAVBAR.js"></script>
+  <!-- navbar dropdown -->
+  <script src="./JAVASCRIPT-COMPONENT/NAVBAR/DROPDOWN/NAVBAR-DROPDOWN.js"></script>
+  <!-- hero javascript component -->
+  <script src="./JAVASCRIPT-COMPONENT/HERO/HERO.js"></script>
+  <!-- javascript file -->
+  <script src="./javascript/script.js"></script>
+  <!-- text over hero image -->
+  <script src="./JAVASCRIPT-COMPONENT/HERO/TEXT.js"></script>
+  <!-- slideshow js -->
+  <script src="./JAVASCRIPT-COMPONENT/SLIDESHOW/SLIDESHOW.js"></script>
+  <!-- slider js-->
+  <script src="./JAVASCRIPT-COMPONENT/SLIDER/SLIDER.js"></script>
+  <!-- index slideshow js -->
+  <script src="./javascript/slideshow.js"></script>
+  <!-- footer javascript -->
+  <script src="./JAVASCRIPT-COMPONENT/FOOTER/FOOTER.js"></script>
+</body>
 </html>
