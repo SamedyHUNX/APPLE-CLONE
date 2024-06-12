@@ -315,6 +315,7 @@ input[type="text"] {
     overflow-y: scroll;
   }
   .sign-in-section {
+    width: 100%;
     height: 470px;
   }
   .sign-in-section .sign-in-section-top {
