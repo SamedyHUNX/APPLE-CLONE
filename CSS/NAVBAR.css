@@ -1,3 +1,4 @@
+/* some general styling */
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +10,7 @@ html {
   width: 100vw;
   height: 100vh;
 }
+/* MARKING THE END OF THE GENERDAL STYLING */
 
 /* navigation bar */
 .header {
@@ -16,6 +18,7 @@ html {
   height: 44px;
   background-color: #252525;
 }
+/* MARKING THE END OF THE NAVBAR ADJUSTRMENT */
 
 @media screen and (min-width: 940px) {
   .navbar {
@@ -116,3 +119,4 @@ html {
     justify-content: center;
   }
 }
+/* MARKING THE END OF WHOLE STYLING FOR THIS PAGE */
