@@ -41,7 +41,7 @@ desktopGroupArray.forEach((element, i) => {
     subMenuGlobalArray[i].classList.add('hidden');
   })
 })
-// marking the end of dropdown styling section..
+// MARKING THE END OF THE NAVVAR STYLING SECTION
 
 // dropdown's submenu adding element
 const subMenuArray = [...document.getElementsByClassName("submenu")];
@@ -69,4 +69,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 });
+// MARKING THE END OF THE DROPDOWN MENU DYNAMICALLY ADDING OF ELEMENTS.
   

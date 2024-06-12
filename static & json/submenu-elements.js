@@ -1,5 +1,6 @@
 'use strict';
 
+// common submenu of the navbar dropdown
 const subMenuSubarrayAndElements0 = [
     ['Shop', ['Shop the Latest', 'Mac', 'iPad', 'iPhone', 'Apple Watch', 'Apple Vision Pro', 'Accessories']],
     ['Quick Links', ['Find a Store', 'Order Status', 'Apple Trade In', 'Financing']],
@@ -80,3 +81,4 @@ const subMenuSubarrayAndElementsArray = [
     subMenuSubarrayAndElements9,
     subMenuSubarrayAndElements10,
 ]
+// MARKING THE END

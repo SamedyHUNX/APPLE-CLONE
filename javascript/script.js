@@ -85,7 +85,7 @@ textStrongArray.forEach((text, index) => {
     h3SelectaArray[i].textContent = h3Array[i];
   }
 });
-// marking the end of the grid section styling..
+// MARKING THE END OF THIS GRID STYLING USING JAVASCIRPT
 
 // black background so do not have to change strong, h3, button background to black or white
 // 1 indicates black and 0 represents white
@@ -101,8 +101,9 @@ excludedIndexes.forEach((element, i) => {
     buttonBuy[i].style.backgroundColor = "white";
   }
 });
-// marking the end
+// MARKING THE END
 
+// dynamically adding file path
 strongCopiedArray.forEach((element, index) => {
   for (let j = 0; j < strongCopiedArray.length; j++) {
     if (index >= 4 && !element.querySelector(".apple-logo")) {
@@ -124,3 +125,4 @@ const rightGroupArray = [...document.getElementsByClassName("right-group")];
 rightGroupArray.forEach((right) => {
   right.children[1].setAttribute("href", "/signin.html");
 });
+// MARKING THE END

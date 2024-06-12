@@ -1,6 +1,7 @@
 "use strict";
 
 // hero common component
+// its actually a common component (capitalized) but hosting server cant find the path (still figuring out) so i moved it here.
 const heroSectionArray = Array.from(document.getElementsByClassName("hero"));
 
 for (let i = 0; i < heroSectionArray.length; i++) {

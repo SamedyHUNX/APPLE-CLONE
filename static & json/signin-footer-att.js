@@ -1,5 +1,6 @@
 'use strict';
 
+// p contents array for footer
 const pContentArray = [
     {0: ['The Apple Online Store users industry-standard encryption to protect the confidentiality of the information you submit. Learn more about our <a href="#">Security Policy</a>.',
          'We approximate your location from your internet IP address by matching it to a geographic region or from the location entered during your previous visit to Apple.']},
@@ -14,3 +15,4 @@ const pContentArray = [
           <a class="mid-element" href="#">Legal</a>
           <a href="#">Site Map</a>`]}
   ];
+//  MARKING THE END OF THE PAGE
