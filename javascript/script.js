@@ -1,37 +1,35 @@
 "use strict";
 
 // using iife here.
-(function () {
-  // all the hero-image elements
-  const arrayHeroImg = Array.from(document.getElementsByClassName("hero-img"));
+// all the hero-image elements
+const arrayHeroImg = Array.from(document.getElementsByClassName("hero-img"));
 
-  // adjustment to make the photo appear differently in a different screen-width
-  function updateHeroImage() {
-    const screenWidth = window.innerWidth;
-    arrayHeroImg.forEach((image, i) => {
-      if (screenWidth >= 1140) {
-        image.setAttribute(
-          heroImgAttributeArray[i][0][0],
-          heroImgAttributeArray[i][0][1]
-        );
-        image.setAttribute(
-          heroImgAttributeArray[i][1][0],
-          heroImgAttributeArray[i][1][1]
-        );
-      } else {
-        image.setAttribute(
-          heroImgAttributeArray[i][2][0],
-          heroImgAttributeArray[i][2][1]
-        );
-      }
-    });
-  }
+// adjustment to make the photo appear differently in a different screen-width
+function updateHeroImage() {
+  const screenWidth = window.innerWidth;
+  arrayHeroImg.forEach((image, i) => {
+    if (screenWidth >= 1140) {
+      image.setAttribute(
+        heroImgAttributeArray[i][0][0],
+        heroImgAttributeArray[i][0][1]
+      );
+      image.setAttribute(
+        heroImgAttributeArray[i][1][0],
+        heroImgAttributeArray[i][1][1]
+      );
+    } else {
+      image.setAttribute(
+        heroImgAttributeArray[i][2][0],
+        heroImgAttributeArray[i][2][1]
+      );
+    }
+  });
+}
 
-  updateHeroImage();
+updateHeroImage();
 
-  window.addEventListener("resize", updateHeroImage);
-  // marking the end of hero component styling..
-})();
+window.addEventListener("resize", updateHeroImage);
+// marking the end of hero component styling..
 
 // button deletion for grid section
 const buttonLearnMore = [...document.getElementsByClassName("learn-more")];
