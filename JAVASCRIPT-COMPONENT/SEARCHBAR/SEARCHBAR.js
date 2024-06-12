@@ -1,5 +1,6 @@
 "use strict";
 
+// searchbar injection
 const searchBarArray = Array.from(
   document.getElementsByClassName("store-search-bar")
 );
@@ -29,3 +30,4 @@ searchBarArray.forEach((search, i) => {
       </div>
     `;
 });
+// MARKING THE END OF THE SEARCHBAR INJECTION

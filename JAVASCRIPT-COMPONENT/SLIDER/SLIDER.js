@@ -1,5 +1,6 @@
 'use strict';
 
+// injection of slider section
 const autoSlider = document.getElementsByClassName('');
 
 autoSlider.innerHTML = `
@@ -80,3 +81,5 @@ autoSlider.innerHTML = `
 </div>
 </div>
 `
+
+// MARKING THE END OF THE INJECTION ELEMENT SECTION

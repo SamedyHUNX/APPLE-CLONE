@@ -5,7 +5,7 @@ const subMenuGlobalArray = [...document.getElementsByClassName("dropdown")];
 // dropdown container
 const dropDownContainer = document.querySelector('.dropdown-container');
 
-// common component for the navbar dropdown;
+// navbar dropdown component
 (function() {
 subMenuGlobalArray.forEach(subArray => {
   subArray.innerHTML = `
@@ -29,6 +29,7 @@ subMenuGlobalArray.forEach(subArray => {
 `;
 });
 })();
+// MARKING THE END OF THE DROPDOWN INJECTION SECTION
 
 // make the dropdown appear when hovering over the navbar element
 desktopGroupArray.forEach((element, i) => {

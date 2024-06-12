@@ -1,5 +1,6 @@
 'use strict';
 
+// footer
 const footer = document.getElementsByClassName('footer')[0];
 
 footer.innerHTML = `
@@ -251,8 +252,9 @@ footer.innerHTML = `
 </div>
 `
 
-// marking the end of the injection codes
+// MARKING THE END OF THE INJECTION SECTION
 
+// footer dropdown
 const eachLiFooterArray = [...document.getElementsByClassName('wrapped-div')];
 
 const upArrowsArray = [...document.getElementsByClassName('up-arrow')];
@@ -271,3 +273,4 @@ downArrowsArray.forEach((arrow, index) => {
     eachLiFooterArray[index].classList.add('hidden');
   })
 })
+// MARKING THE END OF THE FOOTER DROPDOWN

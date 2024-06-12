@@ -1,5 +1,6 @@
 'use strict';
 
+// slider injection
 const mySliderArray = [...document.getElementsByClassName('my-slider')];
 
 mySliderArray.forEach((slider) => {
@@ -74,3 +75,5 @@ mySliderArray.forEach((slider) => {
   </div>
   `;
 })
+
+// MARKING THE END OF THE INJECTION SECTION
