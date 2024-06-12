@@ -81,3 +81,4 @@ const heroImgAttributeArray = [
     ],
   ],
 ];
+// MARKING THE END OF THE PAGE

@@ -1,5 +1,6 @@
 "use strict";
 
+// arrays to hold contents for slider and slideshow section
 const sliderImgArray = [
   "./assets/images/Promo/Image Slider/Argylle/Argylle Small.jpg",
   "./assets/images/Promo/Image Slider/Franklin/Franklin Small.jpg",
@@ -51,3 +52,4 @@ const sliderImgAltSmallerArray = [
   "Superbloom",
   "A-List Pop",
 ];
+// MARKING THE END OF THE PAGE
