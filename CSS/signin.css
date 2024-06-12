@@ -204,7 +204,7 @@ input[type="text"] {
 /* footer of the page */
 .page-footer {
   height: max-content;
-  width: 100%;
+  width: 61.25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -212,19 +212,19 @@ input[type="text"] {
   top: 6%;
   font-size: 12px;
   font-family: "SF Pro Display Semibold", sans-serif;
-  padding: 0px 2.5vw;
   font-weight: 100;
   opacity: 0.65;
   letter-spacing: -0.025px;
   background-color: rgb(231, 230, 230);
+  margin: auto;
 }
 
 .footer-top,
 .footer-bottom {
-  width: 1080px;
+  width: 61.25rem;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .footer-top {
@@ -280,6 +280,10 @@ input[type="text"] {
 
 .copyright p {
   margin: 5px 0 0;
+}
+
+.copyright p a {
+  color: #1d1d1f;
 }
 
 .copyright ul {
@@ -533,6 +537,7 @@ input[type="text"] {
   /* footer of the page */
 
   .page-footer {
+    width: 100%;
     padding: 0px 2.5vw;
     top: 9%;
   }
