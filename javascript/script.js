@@ -1,6 +1,5 @@
 "use strict";
 
-// using iife here.
 // all the hero-image elements
 const arrayHeroImg = Array.from(document.getElementsByClassName("hero-img"));
 
